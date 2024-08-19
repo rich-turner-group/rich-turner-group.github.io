@@ -1,1 +1,2 @@
-# rich-turner-group.github.io
+# Rich Turner Group website
+[rich-turner-group.github.io](rich-turner-group.github.io)
