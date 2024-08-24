@@ -1,7 +1,8 @@
 ---
 name: "Marcin Tomczak"
-role:
-    - "PhD student 2019-2023"
+role: "PhD student"
+start: "2019"
+end: "2023"
 website: 
 thesis: ""
 next: ""

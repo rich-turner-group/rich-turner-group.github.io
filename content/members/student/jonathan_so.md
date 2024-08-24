@@ -1,9 +1,9 @@
 ---
 name: "Jonathan So"
 website:
-picture:
-role:
-    - "PhD student 2018-202"
+picture: images/members/jonathan_so.jpg
+role: "PhD student"
+start:
 interests:
     - "Probabilistic machine learning"
     - "Computational neuroscience"

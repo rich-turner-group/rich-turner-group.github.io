@@ -1,8 +1,11 @@
 ---
 name: "Stratis Markou"
 website: https://random-walks.org/intro.html 
-picture:
-role:
-    - "PhD student 2020"
+picture: images/members/stratis_markou.jpg
+role: "PhD student"
+start: "2020"
 interests:
+    - "probabilistic modelling"
+    - "weather prediction"
+
 ---

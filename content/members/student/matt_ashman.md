@@ -1,10 +1,9 @@
 ---
 name: "Matt Ashman"
 website: https://mattashman.github.io 
-picture:
-roles:
-    - "PhD student 2020-202?"
-    - "MPhil student 2019-2020"
+picture: images/members/matt_ashman.jpg
+roles: "PhD student"
+start: "2020"
 interests:
     - "probabilistic machine learning"
     - "decision making under uncertainty"

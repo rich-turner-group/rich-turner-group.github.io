@@ -1,7 +1,8 @@
 ---
 name: "Rosy Southwell"
-role:
-    - "Research Assistant 2013-2014" 
+role: "Research Assistant"
+start: "2013"
+end: "2014"
 website:
 next: "PhD student at University College London"
 ---

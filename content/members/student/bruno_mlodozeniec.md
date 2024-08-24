@@ -1,9 +1,9 @@
 ---
 name: "Bruno Mlodozeniec"
 website: https://brunokm.github.io
-picture: bruno_mlodozeniec.jpg
-role:
-    - "PhD student 2023-202?"
+picture: images/members/bruno_mlodozeniec.jpg
+role: "PhD student" 
+start: "2023"
 interests:
     - "probabilistic modelling"
     - "interpretability"

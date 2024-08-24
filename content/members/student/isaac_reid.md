@@ -1,9 +1,9 @@
 ---
 name: "Isaac Reid"
 website: https://isaac-reid.github.io
-picture:
-role:
-    - "PhD student 2022-202?"
+picture: images/members/isaac_reid.jpg
+role: "PhD student"
+start: "2022"
 interests:
     - "machine learning"
     - "statistical physics"

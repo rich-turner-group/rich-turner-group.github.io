@@ -1,7 +1,7 @@
 ---
 name: "Kenza Tazi"
 website: https://kenzaxtazi.github.io
-picture: kenza_tazi.jpg
+picture: images/members/kenza_tazi.jpg
 role:
     - "PhD student 2020-2024"
 interests:

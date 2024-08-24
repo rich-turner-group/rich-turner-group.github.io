@@ -1,7 +1,8 @@
 ---
 name: "John Bronskill"
 website: https://cbl.eng.cam.ac.uk/people/jfb54/
-picture: john_bronskill.jpg
+picture: images/members/john_bronskill.jpg
+start:
 interests:
     - "digital imaging"
     - "computer vision"
