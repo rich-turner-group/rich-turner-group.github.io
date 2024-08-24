@@ -1,13 +1,13 @@
 
 {% if include.sort_by %}
-{% assign person = person | sort: include.sort_by %}
+{% assign entries = entries | sort: include.sort_by %}
 {% endif %}
 
 {% if include.sort_order == 'reverse' %}
-{% assign person = person | reverse %}
+{% assign entries = entries | reverse %}
 {% endif %}
 
-{%- for post in person -%}
+{%- for post in entries -%}
 {%- unless post.hidden -%}
 
     <div class="{{ include.type | default: " list" }}__item">
