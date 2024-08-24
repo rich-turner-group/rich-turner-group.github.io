@@ -1,9 +1,8 @@
 ---
-name: ""
+name: "Matejo Rojas-Carulla"
 role:
-    - "Master's student "
-    - "PhD student "
-website: 
-thesis: ""
-next: ""
+    - "PhD student 2014-2018"
+website:
+thesis: "Learning Transferable Representations"
+next: "Research scientist at Facebook AI Research"
 ---
