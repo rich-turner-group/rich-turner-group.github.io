@@ -1,9 +1,8 @@
 ---
-name: ""
+name: "Mark Rowland"
 role:
-    - "Master's student "
-    - "PhD student "
-website: 
-thesis: ""
-next: ""
+    - "PhD student 2014-2018"
+website: https://sites.google.com/view/markrowland
+thesis: "Structure in Machine Learning: Graphical Models and Monte Carlo Methods"
+next: "Research Scientist at DeepMind"
 ---

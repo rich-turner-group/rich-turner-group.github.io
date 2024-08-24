@@ -6,5 +6,7 @@ roles:
     - "PhD student 2020-202?"
     - "MPhil student 2019-2020"
 interests:
+    - "probabilistic machine learning"
+    - "decision making under uncertainty"
     
 ---
