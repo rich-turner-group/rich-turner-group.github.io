@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Rich Turner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="icon" href="images/tab_icon.svg"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="fonts/CooperHewitt/stylesheet.css"> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet"> -->
+</head>
+
+<body>
+    <article class="athelas">
+        <div class="db w-100 tc bg-black white cover flex flex-column" id="profile-cover">
+            <div class="w-100 v-top" style="margin-bottom: auto;">
+                <header class="white-60">
+                    <h2 class="f6 fw1 ttu tracked mb2 lh-title">Home | Group | Apply</h2>
+                    <h3 class="f6 fw1 lh-title">Maybe a quote here</h3>
+                </header>
+            </div>
+            <div class="w-100 v-btm">
+                <!-- <h1 class="f1 f-headline-l fw1 i white-60">Richard Turner</h1> -->
+                <blockquote class="ph0 ph2 center tracked">
+                    <p class="f5 ttu tracked fs-normal mb0">Richard turner</p>
+                    <p class="f7 fw1 white-90 mb0">
+                        Professor of Machine Learning | University of Cambridge
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </article>
+    <!-- <section class="measure-wide center b--light-gray br1 bl br mh3 bg-white"> -->
+    <article class="athelas">
+        <div class="center measure-wide f5 pv3 lh-copy ph2">
+          <p>
+            Richard Turner is a Professor of Machine Learning in the Department of Engineering at the University of Cambridge and a Visiting Researcher at Microsoft Research Cambridge. 
+        </p>
+        <p>
+            
+            Over the last two years his work has been presented in oral presentations at top machine learning conferences including AAAI, AIStats, ICLR, ICML and NeurIPS and he has given keynote lectures and tutorials at the Machine Learning and Signal Processing Summer School, the International Conference on Machine Learning, Optimization & Data Science, and the Machine Learning Summer School.
+        </p> 
+        <p>
+            Professor Turner is on the Steering Committee for the Cambridge Centre for Data Driven Discovery (C2D3). He has been awarded the Cambridge Students' Union Teaching Award for Lecturing. His work has featured on BBC Radio 5 Live’s The Naked Scientist, BBC World Service’s Click and in Wired Magazine.
+
+          </p>
+        </div>
+
+      </article>
+      <article class="">
+        <div class="center lh-copy ma2 pa1">
+            <div class="w-70-l w-100-m w-100-s center ph3">
+                <h1 class="f2 lh-title bb bw1 black-60">Appearances</h1>
+            </div>
+        </div>
+        <div>
+          <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
+            <a  href="https://www.thenakedscientists.com/articles/interviews/quiet-ai-revolution-taking-weather-forecasting-storm" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
+                <p class="f7 ttu tracked bb mb0 pb2">
+                    The Naked Scientist Podcast
+                </p>
+                <h3 class="f5 fw6 avenir mt3 lh-copy">
+                    <span class="fw7">Interview: </span>
+                     Quiet AI revolution taking weather forecasting by storm
+                </h3>
+            </a>
+            <!-- ------ -->
+            <a  href="https://www.youtube.com/watch?v=JGn18WH0d6s" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
+                <p class="f7 ttu tracked bb mb0 pb2">
+                    Cambridge Philosophical Society
+                </p>
+                <h3 class="f5 fw6 avenir mt3 lh-copy">
+                    <span class="fw7">Talk: </span>
+                        The Quiet AI Revolution in Weather Forecasting
+                </h3>
+            </a>
+            <a  href="https://www.youtube.com/watch?v=JGn18WH0d6s" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
+                <p class="f7 ttu tracked bb mb0 pb2">
+                    Cambridge Philosophical Society
+                </p>
+                <h3 class="f5 fw6 avenir mt3 lh-copy">
+                    <span class="fw7">Talk: </span>
+                        The Quiet AI Revolution in Weather Forecasting
+                </h3>
+            </a>
+
+
+
+          </div>
+        </div>
+
+      </article>
+      <article class="">
+        <div class="center measure-wide lh-copy ma2 pa1">
+            <div class="measure-wide center">
+
+                <h1 class="f2 lh-title bb bw1">Group members</h1>
+            </div>
+            BRUNO MLODOZENIEC
+            {% include member_list.html collection=postdoc type=current_member%}
+            {% include member_list.html collection=student type=current_member%}
+            {% include member_list.html collection=former type=former_member%}
+            
+        </div>
+        </article>
+<!-- </section> -->
+
+</body>
+
+</html>
