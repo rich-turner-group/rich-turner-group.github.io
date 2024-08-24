@@ -1,0 +1,31 @@
+
+{% if include.sort_by %}
+{% assign person = person | sort: include.sort_by %}
+{% endif %}
+
+{% if include.sort_order == 'reverse' %}
+{% assign person = person | reverse %}
+{% endif %}
+
+{%- for post in person -%}
+{%- unless post.hidden -%}
+
+    <div class="{{ include.type | default: " list" }}__item">
+        <h2> Former members </h2>
+        <article>
+    
+            <h3 itemprop="headline"> {{name}} </h3>
+    
+            <p>
+                {% if post.website%} <a href="{{ post.website }}"> website</a> {% endif %}
+                {% if post.role%} <a> {{ post.role }}</a> {% endif %}
+                {% if post.start%} <a> | {{ post.start }} </a> {% endif %}
+                {% if post.end%} <a> -{{ post.end }} </a> {% endif %}
+                {% if post.thesis %} <a> | {{ post.thesis }} </a> {% endif %}
+                {% if post.next%} <a> | {{ post.next }} </a> {% endif %}
+            </p>
+        </article>
+    </div>
+    
+{%- endunless -%}
+{%- endfor -%}
