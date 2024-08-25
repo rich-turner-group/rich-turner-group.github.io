@@ -5,5 +5,5 @@ start: "2013"
 end: "2017"
 website: https://www.linkedin.com/in/akwn/ 
 thesis: "Probabilistic Machine Learning for Circular Statistics: Models and inference using the Multivariate Generalised von Mises distribution"
-next: "Senior research scientist at AstraZeneca"
+next_role: "Senior research scientist at AstraZeneca"
 ---

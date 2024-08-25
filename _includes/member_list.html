@@ -1,16 +1,14 @@
 {% assign entries = site[include.collection] %}
 
-<h2> {{include.collection}} </h2>
-
 {% if include.sort_by %}
-{% assign entries = entries | sort: include.sort_by %}
+    {% assign entries = entries | sort: include.sort_by %}
 {% endif %}
 
 {% if include.sort_order == 'reverse' %}
-{% assign entries = entries | reverse %}
+    {% assign entries = entries | reverse %}
 {% endif %}
 
-{% if include.type == 'current_member' %}
+{% if include.type == "current_member" %}
     {%- for post in entries -%}
     {%- unless post.hidden -%}
         {% include current_member.html %}
@@ -18,7 +16,7 @@
     {%- endfor -%}
 {% endif %}
 
-{% if include.type == 'former_member' %}
+{% if include.type == "former_member" %}
     {%- for post in entries -%}
     {%- unless post.hidden -%}
         {% include former_member.html %}

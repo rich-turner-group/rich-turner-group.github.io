@@ -5,5 +5,5 @@ start: "2018"
 end: "2023"
 website: https://www.linkedin.com/in/elre-oldewage
 thesis: "Advances in Meta-Learning, Robustness, and Second-Order Optimisation in Deep Learning"
-next: "Application Engineer at MathWorks"
+next_role: "Application Engineer at MathWorks"
 ---

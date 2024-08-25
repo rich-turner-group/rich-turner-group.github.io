@@ -5,6 +5,6 @@ picture: images/members/jonathan_so.jpg
 role: "PhD student"
 start: "2019"
 interests:
-    - "Probabilistic machine learning"
-    - "Computational neuroscience"
+    - "probabilistic machine learning"
+    - "computational neuroscience"
 ---

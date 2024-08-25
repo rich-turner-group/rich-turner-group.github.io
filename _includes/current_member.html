@@ -1,31 +1,17 @@
-{% if include.sort_by %}
-{% assign person = person | sort: include.sort_by %}
-{% endif %}
-
-{% if include.sort_order == 'reverse' %}
-{% assign person = person | reverse %}
-{% endif %}
-
-{%- for post in person -%}
-{%- unless post.hidden -%}
-
 <div>
-    <h2> person</h2>
     <article>
         <div>
-            <img src="{{ teaser | prepend: " /images/members" | prepend: base_path }}" alt="">
+            <img src="{{post.picture}}" alt="">
         </div>
 
-        <h3 itemprop="headline"> {{name}} </h3>
+        <h3 itemprop="headline"> {{post.name}} </h3>
 
         <p>
-            {% if post.website%} <a href="{{ post.website }}"> website</a> {% endif %}
+            {% if post.website %} <a href="{{ post.website }}"> website</a> {% endif %}
             {% if post.interests %}
             {% for tag in post.interests %}
-            | <a> {{ tag }} </a> {% endfor %} {% endif %}
+                <a> | {{ tag }} </a> {% endfor %} {% endif %}
 
         </p>
     </article>
 </div>
-{%- endunless -%}
-{%- endfor -%}

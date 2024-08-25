@@ -5,6 +5,6 @@ role: "PhD student"
 start: "2023"
 picture: images/members/andrew_mcdonald.jpg
 interests:
-    - "Diffusion models"
-    - "Climate science"
+    - "diffusion models"
+    - "climate science"
 ---
