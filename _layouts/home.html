@@ -50,8 +50,21 @@
 
           </p>
         </div>
-
       </article>
+            
+    <article class="">
+        <div class="center lh-copy ma2 pa1">
+            <div class="w-70-l w-100-m w-100-s center ph3">
+                <h1 class="f2 lh-title bb bw1 black-60">Selected publication</h1>
+            </div>
+        </div>
+        <div>
+            <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
+                {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
+            </div>
+        </div>
+    </article>
+
       <article class="">
         <div class="center lh-copy ma2 pa1">
             <div class="w-70-l w-100-m w-100-s center ph3">
@@ -60,11 +73,11 @@
         </div>
         <div>
           <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
-            {% include press_list.html collection="press" sort_by="date" sort_order="reverse"%}
+            {% include list.html collection="press" sort_by="date" sort_order="reverse"%}
           </div>
         </div>
-
       </article>
+
       <article class="">
         <div class="center measure-wide lh-copy ma2 pa1">
             <div class="measure-wide center">
@@ -74,10 +87,10 @@
             
             <div>
                 <h2>Current members </h2>
-                {% include member_list.html collection="postdoc" type="current_member"%}
-                {% include member_list.html collection="student" type="current_member"%}
+                {% include list.html collection="postdoc" sort_by="start"%}
+                {% include list.html collection="student" sort_by="start"%}
                 <h2> Former members </h2>
-                {% include member_list.html collection="former" type="former_member"%}
+                {% include list.html collection="former" sort_by="start"%}
             </div>
             
         </div>
