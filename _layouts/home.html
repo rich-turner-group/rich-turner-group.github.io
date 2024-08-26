@@ -87,10 +87,10 @@
             
             <div>
                 <h2>Current members </h2>
-                {% include list.html collection="postdoc" sort_by="start"%}
-                {% include list.html collection="student" sort_by="start"%}
+                {% include list.html collection="postdoc" sort_by="start" %}
+                {% include list.html collection="student" sort_by="start" %}
                 <h2> Former members </h2>
-                {% include list.html collection="former" sort_by="start"%}
+                {% include list.html collection="former" sort_by="start" sort_order="reverse"%}
             </div>
             
         </div>
