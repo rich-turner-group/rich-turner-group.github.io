@@ -60,37 +60,7 @@
         </div>
         <div>
           <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
-            <a  href="https://www.thenakedscientists.com/articles/interviews/quiet-ai-revolution-taking-weather-forecasting-storm" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
-                <p class="f7 ttu tracked bb mb0 pb2">
-                    The Naked Scientist Podcast
-                </p>
-                <h3 class="f5 fw6 avenir mt3 lh-copy">
-                    <span class="fw7">Interview: </span>
-                     Quiet AI revolution taking weather forecasting by storm
-                </h3>
-            </a>
-            <!-- ------ -->
-            <a  href="https://www.youtube.com/watch?v=JGn18WH0d6s" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
-                <p class="f7 ttu tracked bb mb0 pb2">
-                    Cambridge Philosophical Society
-                </p>
-                <h3 class="f5 fw6 avenir mt3 lh-copy">
-                    <span class="fw7">Talk: </span>
-                        The Quiet AI Revolution in Weather Forecasting
-                </h3>
-            </a>
-            <a  href="https://www.youtube.com/watch?v=JGn18WH0d6s" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
-                <p class="f7 ttu tracked bb mb0 pb2">
-                    Cambridge Philosophical Society
-                </p>
-                <h3 class="f5 fw6 avenir mt3 lh-copy">
-                    <span class="fw7">Talk: </span>
-                        The Quiet AI Revolution in Weather Forecasting
-                </h3>
-            </a>
-
-
-
+            {% include press_list.html collection="press" sort_by="date"%}
           </div>
         </div>
 
@@ -102,7 +72,13 @@
                 <h1 class="f2 lh-title bb bw1">Group members</h1>
             </div>
             
-            {{content}}
+            <div>
+                <h2>Current members </h2>
+                {% include member_list.html collection="postdoc" type="current_member"%}
+                {% include member_list.html collection="student" type="current_member"%}
+                <h2> Former members </h2>
+                {% include member_list.html collection="former" type="former_member"%}
+            </div>
             
         </div>
         </article>

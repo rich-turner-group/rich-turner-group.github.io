@@ -45,6 +45,10 @@ collections:
   former:
     output: true
     permalink: /:collection/:path/
+  press:
+    output: true
+    permalink: /:collection/:path/
+
 
 
 # Exclude from processing.
