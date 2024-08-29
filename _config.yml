@@ -45,7 +45,7 @@ collections:
   former:
     output: true
     permalink: /:collection/:path/
-  press:
+  news:
     output: true
     permalink: /:collection/:path/
   publications:
