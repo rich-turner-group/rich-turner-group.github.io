@@ -51,8 +51,14 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  apply:
+    output: true
+    permalink: /:collection/:path/
+  about:
+    output: true
+    permalink: /:collection/:path/  
 
-
+# Collections
 
 # Exclude from processing.
 # The following items will not be processed, by default.

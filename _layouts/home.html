@@ -38,14 +38,14 @@
     <!-- <section class="measure-wide center b--light-gray br1 bl br mh3 bg-white"> -->
     <article class="athelas">
         <div class="center measure-wide f5 pv3 lh-copy ph2">
-          {{ content }}
+            {% include list.html collection="about" %}
         </div>
       </article>
             
     <article class="">
         <div class="center lh-copy ma2 pa1">
             <div class="w-70-l w-100-m w-100-s center ph3">
-                <h1 class="f2 lh-title bb bw1 black-60">Selected publication</h1>
+                <h1 class="f2 lh-title bb bw1 black-60">Selected work</h1>
             </div>
         </div>
         <div>
@@ -58,7 +58,7 @@
       <article class="">
         <div class="center lh-copy ma2 pa1">
             <div class="w-70-l w-100-m w-100-s center ph3">
-                <h1 class="f2 lh-title bb bw1 black-60">Appearances</h1>
+                <h1 class="f2 lh-title bb bw1 black-60">News</h1>
             </div>
         </div>
         <div>
@@ -67,6 +67,19 @@
           </div>
         </div>
       </article>
+
+    <article class="">
+        <div class="center lh-copy ma2 pa1">
+            <div class="w-70-l w-100-m w-100-s center ph3">
+                <h1 class="f2 lh-title bb bw1 black-60">Apply</h1>
+            </div>
+        </div>
+        <div>
+            <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
+               {% include list.html collection="apply" %}
+            </div>
+        </div>
+    </article>
 
       <article class="">
         <div class="center measure-wide lh-copy ma2 pa1">

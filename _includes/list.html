@@ -25,5 +25,11 @@
     {% if include.collection == "former" %}
         {% include former_member.html %}
     {% endif %}
+    {% if include.collection == "apply" %}
+        {% include paragraph.html %}
+    {% endif %}
+    {% if include.collection == "about" %}
+        {% include paragraph.html %}
+    {% endif %}
 {%- endunless -%}
 {%- endfor -%}
