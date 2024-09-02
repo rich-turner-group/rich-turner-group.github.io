@@ -1,5 +1,30 @@
 /* @charset "UTF-8"; */
 
+/* -- Defaults for rendering markdown -- */
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    /* Change the color of the bullet points */
+}
+/* Links */
+a {
+    color: #b84a00;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+a:hover, a:focus {
+    color: #da854d;
+    /* text-decoration: underline; */
+    /* Slow transition */
+    transition: color .15s ease-in;
+    /* transition:cubic-bezier(0.645, 0.045, 0.355, 1); */
+}
+
+/* ^^ Defaults for rendering markdown ^^ */
 
 #profile-cover {
 
@@ -18,4 +43,101 @@ a p::after {
     margin: 0 0 0 2px;
     font-size: 10px;
     line-height: 9px;
+}
+
+
+.about-and-menu {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    padding-top: 1em;
+}
+.menu-in-about {
+    /* width: 10em; */
+    flex: 1;
+    max-width: 13em;
+
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    /* margin-top: 1em; */
+    /* padding-top: 0.5em; */
+    padding-bottom: 0.5em;
+
+    border-width: .25rem;
+    border-top-style: solid;
+    border-bottom-style: none;
+    /* padding-left: 1em; */
+}
+
+.menu-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 0.5em;
+    margin-bottom: 1.0rem;
+    /* padding-bottom: 0em; */
+
+
+}
+.menu-link {
+    display: block;
+    margin-right: 2em;
+    margin-left: 0em;
+    margin-bottom: 1em;
+    margin-top: 0em;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    /* Mid-gray */
+    color: #555;  
+    letter-spacing: .1em;
+    /* Transition effects */
+    transition: color .15s ease-in;
+    /* transition: transform 0.25s ease-out; */
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: #000;
+    transition: color .15s ease-in;
+}
+
+.about {
+    max-width: 30em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0em;
+    padding-top: 0em;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    /* padding: 1em 1em 0em 0em; */
+}
+
+.about a::after {
+    list-style-type: none;
+    content: "°";
+    /* opacity: 0.3; */
+}
+
+.about p {
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+/* When screen is smaller than 56em */
+@media screen and (max-width: 56em) {
+    .about-and-menu {
+        flex-direction: column;
+    }
+    .menu-in-about {
+        max-width: 100%;
+        border-width: .125rem;
+        border-bottom-style: solid;
+        margin-top: 0em;
+    }
+    .about {
+        max-width: 100%;
+    }
+    .menu-link {
+        display: inline;
+    }
 }

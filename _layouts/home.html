@@ -5,12 +5,12 @@
     <title>Rich Turner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
-    <link href="style.css" rel="stylesheet" type="text/css">
     <!-- <link rel="icon" href="images/tab_icon.svg"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="fonts/CooperHewitt/stylesheet.css"> -->
+    <link href="style.css" rel="stylesheet" type="text/css">
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet"> -->
 </head>
@@ -37,35 +37,31 @@
     </article>
     <!-- <section class="measure-wide center b--light-gray br1 bl br mh3 bg-white"> -->
     <section>
-        <div class="w-70-l w-100-m w-100-s center">
-            <header class="fl tl w-30-ns w-100-s">
-                <div class="pv3 mv3 ph3">
-                    <h1 class="f3 lh-title fw9 mb3 mt0 pt3 bt bw2">
-                        Turner Group
-                    </h1>
-                    <!-- <h1 class="f3 lh-title fw9 mb3 mt0 pt3 bb bw2">
-                        Richard Turner 
-                    </h1> -->
-                    <p class="f7 ttu tracked mid-gray">Home</p>
-                    <p class="f7 ttu tracked mid-gray">About</p>
-                    <p class="f7 ttu tracked mid-gray">News</p>
-                    <p class="f7 ttu tracked mid-gray">Apply</p>
-                    <p class="f7 ttu tracked mid-gray">Group</p>
+        <div class="about-and-menu" id="about-and-menu">
+            <div class="menu-in-about">
+                <h1 class="menu-title">
+                    Turner Group
+                </h1>
+                <!-- <h1 class="f3 lh-title fw9 mb3 mt0 pt3 bb bw2">
+                    Richard Turner 
+                </h1> -->
+                <a class="menu-link" href="index.html">Home</a>
+                <a class="menu-link" href="#about-and-menu">About</a>
+                <a class="menu-link" href="#news">News</a>
+                <a class="menu-link">Apply</a>
+                <a class="menu-link">Group</a>
+
+            </div>
+            <div class="about">
+                {% include list.html collection="about" %}
+
+            </div>
+            <div class="menu-in-about" style="visibility: hidden;">
                 </div>
-            </header>
-            <article class="fl w-70-ns w-100-s athelas center">
-                <!-- <div class="fn fl w-50-ns"> -->
-                    <div class="tl measure-wide f5 lh-copy ph2">
-                        {% include list.html collection="about" %}
-                    </div>
-                <!-- </div> -->
-            </article>
+
         </div>
 
-
     </section>
-    <!-- <div class="w5"> -->
-    <!-- </div> -->
             
     <article class="">
         <div class="center lh-copy ma2 pa1">
