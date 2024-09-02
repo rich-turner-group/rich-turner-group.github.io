@@ -15,13 +15,13 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet"> -->
 </head>
 
-<body>
+<body class="athelas">
     <article class="athelas">
         <div class="db w-100 tc bg-black white cover flex flex-column" id="profile-cover">
             <div class="w-100 v-top" style="margin-bottom: auto;">
                 <header class="white-60">
                     <h2 class="f6 fw1 ttu tracked mb2 lh-title">Home | Group | Apply</h2>
-                    <h3 class="f6 fw1 lh-title">Maybe a quote here</h3>
+                    <!-- <h3 class="f6 fw1 lh-title">Maybe a quote here</h3> -->
                 </header>
             </div>
             <div class="w-100 v-btm">
@@ -36,16 +36,41 @@
         </div>
     </article>
     <!-- <section class="measure-wide center b--light-gray br1 bl br mh3 bg-white"> -->
-    <article class="athelas">
-        <div class="center measure-wide f5 pv3 lh-copy ph2">
-            {% include list.html collection="about" %}
+    <section>
+        <div class="w-70-l w-100-m w-100-s center">
+            <header class="fl tl w-30-ns w-100-s">
+                <div class="pv3 mv3 ph3">
+                    <h1 class="f3 lh-title fw9 mb3 mt0 pt3 bt bw2">
+                        Turner Group
+                    </h1>
+                    <!-- <h1 class="f3 lh-title fw9 mb3 mt0 pt3 bb bw2">
+                        Richard Turner 
+                    </h1> -->
+                    <p class="f7 ttu tracked mid-gray">Home</p>
+                    <p class="f7 ttu tracked mid-gray">About</p>
+                    <p class="f7 ttu tracked mid-gray">News</p>
+                    <p class="f7 ttu tracked mid-gray">Apply</p>
+                    <p class="f7 ttu tracked mid-gray">Group</p>
+                </div>
+            </header>
+            <article class="fl w-70-ns w-100-s athelas center">
+                <!-- <div class="fn fl w-50-ns"> -->
+                    <div class="tl measure-wide f5 lh-copy ph2">
+                        {% include list.html collection="about" %}
+                    </div>
+                <!-- </div> -->
+            </article>
         </div>
-      </article>
+
+
+    </section>
+    <!-- <div class="w5"> -->
+    <!-- </div> -->
             
     <article class="">
         <div class="center lh-copy ma2 pa1">
             <div class="w-70-l w-100-m w-100-s center ph3">
-                <h1 class="f2 lh-title bb bw1"> Selected work</h1>
+                <h1 class="f4 lh-title bb bw2 ttu tracked sans-serif"> Selected work</h1>
             </div>
         </div>
         <div>
