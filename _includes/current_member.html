@@ -1,16 +1,24 @@
-<div>
-    <article>
-        <div>
-            <img src="{{post.picture}}" alt="">
+<div class="w-100 flex link dim ba bw0 pa3 mv3 mh3 mh0-ns member-box">
+    <!-- <article> -->
+        <div class="w-10">
+            <div class="member-image">
+                <a href="{{ post.website }}">
+                    <img src="{{post.picture}}" alt="">
+                </a>
+            </div>
         </div>
+        <div class="w-90 pl3 ml3 bl bw1">
+            <a href="{{ post.website }}">
+            
+            <h3 class="mt0"> {{post.name}} </h3>
 
-        <h3 itemprop="headline"> {{post.name}} </h3>
-
-        <p>
-            {% if post.website %} <a href="{{ post.website }}"> website</a> {% endif %}
-            {% if post.interests %}
-            {% for tag in post.interests %}
-                <a> | {{ tag }} </a> {% endfor %} {% endif %}
-        </p>
-    </article>
+            <p class="">
+                <!-- {% if post.website %} <a href="{{ post.website }}"> website</a> {% endif %} -->
+                {% if post.interests %}
+                {% for tag in post.interests %}
+                    <span> | {{ tag }} </span> {% endfor %} {% endif %}
+            </p>
+            </a>
+        </div>
+    <!-- </article> -->
 </div>

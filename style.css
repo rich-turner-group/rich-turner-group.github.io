@@ -36,7 +36,9 @@ a:hover, a:focus {
     background-size: cover;
   }
 
+
 /* About section styling */
+
 .about-and-menu {
     justify-content: center;
     display: flex;
@@ -147,3 +149,38 @@ a p::after {
     line-height: 9px;
 }
 
+.member-box a {
+    color: black;
+}
+
+.member-image {
+    /* max-width: 30%; */
+    /* Specify a width if you want the div to take up that amount of the parent container */
+    width: 100%;
+    height: 0;
+    /* Padding-top gives the container a fixed aspect ratio of 1:1 (square) */
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden; /* Ensures the image is clipped to the container's bounds */
+    border-style: solid;
+    /* border-color: gray; */
+    border-color: black;
+    border-width: 0.125em;
+    /* border-radius: 2%; */
+}
+
+.member-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%;
+    padding: 0%; */
+    width: 84%;
+    height: 84%;
+    padding: 8%;
+    /* padding-top: 100%; */
+    /* min-width: 100%; */
+    object-fit: cover; /* The image will cover the container maintaining aspect ratio */
+    object-position: center; /* Centers the image within the container */
+  }

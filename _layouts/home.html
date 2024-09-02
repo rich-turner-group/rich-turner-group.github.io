@@ -48,8 +48,8 @@
                 <a class="menu-link" href="index.html">Home</a>
                 <a class="menu-link" href="#about-and-menu">About</a>
                 <a class="menu-link" href="#news">News</a>
-                <a class="menu-link">Apply</a>
-                <a class="menu-link">Group</a>
+                <a class="menu-link" href="#apply">Apply</a>
+                <a class="menu-link" href="#group-members">Group</a>
 
             </div>
             <div class="about">
@@ -76,7 +76,7 @@
         </div>
     </article>
 
-      <article class="">
+      <article class="" id="news">
         <div class="center lh-copy ma2 pa1">
             <div class="w-70-l w-100-m w-100-s center ph3">
                 <h1 class="f2 lh-title bb bw1">Recent news</h1>
@@ -89,32 +89,35 @@
         </div>
       </article>
 
-    <article class="">
+    <article class="" id="apply">
         <div class="center lh-copy ma2 pa1">
             <div class="w-70-l w-100-m w-100-s center ph3">
                 <h1 class="f2 lh-title bb bw1">Apply</h1>
             </div>
         </div>
         <div>
-            <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
+            <div class="center tl ph3 w-70-l w-100-m w-100-s">
                {% include list.html collection="apply" %}
             </div>
         </div>
     </article>
 
-      <article class="">
-        <div class="center measure-wide lh-copy ma2 pa1">
-            <div class="measure-wide center">
+      <article class="" id="group-members">
+        <div class="center w-70 lh-copy ma2 pa1">
+            <div class="center">
 
                 <h1 class="f2 lh-title bb bw1">Group members</h1>
             </div>
             
-            <div>
-                <h2>Current members </h2>
-                {% include list.html collection="postdoc" sort_by="start" %}
-                {% include list.html collection="student" sort_by="start" %}
-                <h2> Former members </h2>
-                {% include list.html collection="former" sort_by="start" sort_order="reverse"%}
+            <h2>Current members </h2>
+                <div class="flexbox">
+                    {% include list.html collection="student" sort_by="start" %}
+                    {% include list.html collection="postdoc" sort_by="start" %}
+                </div>
+            <h2> Former members </h2>
+                <div>
+                    {% include list.html collection="former" sort_by="start" sort_order="reverse"%}
+                </div>
             </div>
             
         </div>
