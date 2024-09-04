@@ -168,7 +168,8 @@ a:hover, a:focus {
       padding-top: 0.4rem;
       border-bottom: 0.2em solid black;
       display:inline;
-      width: 8em;  /* Same as min-height of the parent */ 
+      white-space: nowrap;
+      padding-left: 1em;
       text-align: right;
       bottom: 100%;
       right: 100%;
