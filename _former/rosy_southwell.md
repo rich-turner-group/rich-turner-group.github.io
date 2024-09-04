@@ -1,6 +1,6 @@
 ---
 name: "Rosy Southwell"
-role: "Research Assistant"
+role: "Research assistant"
 start: "2013"
 end: "2014"
 website: https://www.linkedin.com/in/rosy-southwell
