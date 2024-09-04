@@ -62,48 +62,57 @@
         </div>
 
     </section>
-            
-    <article class="">
-        <div class="center lh-copy ma2 pa1">
-            <div class="w-70-l w-100-m w-100-s center ph3">
-                <h1 class="f4 lh-title bb bw2 ttu tracked sans-serif"> Selected work</h1>
-            </div>
-        </div>
-        <div>
-            <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
+    <section class="center" style="max-width: 56em;">
+        <h1 class="f4 lh-title bb bw2 ttu tracked sans-serif"> Selected work</h1>
+        <div class="news-wrapper-left">
+            <h3 class="news-wrapper-left-title">Tutorials</h3>
+            <div class="flex center pl2 pr0 mr0 pb2">
                 {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
             </div>
         </div>
-    </article>
-
-      <article class="" id="news">
-        <div class="center lh-copy ma2 pa1">
-            <div class="w-70-l w-100-m w-100-s center ph3">
-                <h1 class="f2 lh-title bb bw1">Recent news</h1>
+        
+        <div class="news-wrapper-left">
+            <h3 class="news-wrapper-left-title">Blog posts</h3>
+            <div class="flex center pl2 tl pb2">
+                {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
             </div>
         </div>
+        <div class="news-wrapper-left">
+            <h3 class="news-wrapper-left-title">Papers</h3>
+            <div class="flex center pl2 pr0 mr0 pb2">
+                {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
+            </div>
+        </div>
+    </section>
+
+    <article class="center"  style="max-width: 56em;" id="news">
+        <h1 class="f2 lh-title bb bw1">Recent news</h1>
+        <!-- <div class="center lh-copy ma2 pa1">
+            <div class="w-100-l w-100-m w-100-s center ph3">
+            </div>
+        </div> -->
         <div>
-          <div class="flex center tl ph3 w-70-l w-100-m w-100-s">
+          <div class="flex center tl ph0 w-100-l w-100-m w-100-s">
             {% include list.html collection="news" sort_by="date" sort_order="reverse"%}
           </div>
         </div>
       </article>
 
-    <article class="" id="apply">
+    <article class="center"  style="max-width: 56em;" id="apply">
         <div class="center lh-copy ma2 pa1">
-            <div class="w-70-l w-100-m w-100-s center ph3">
+            <div class="w-100-l w-100-m w-100-s center">
                 <h1 class="f2 lh-title bb bw1">Apply</h1>
             </div>
         </div>
         <div>
-            <div class="center tl ph3 w-70-l w-100-m w-100-s">
+            <div class="center tl pr3 w-100-l w-100-m w-100-s">
                {% include list.html collection="apply" %}
             </div>
         </div>
     </article>
 
-      <article class="" id="group-members">
-        <div class="center w-70 lh-copy ma2 pa1">
+      <article class="center" style="max-width: 56em;" id="group-members">
+        <div class="center w-100 lh-copy ma2 pa1">
             <div class="center">
 
                 <h1 class="f2 lh-title bb bw1">Group members</h1>
@@ -111,7 +120,7 @@
             
             <h2>Current members </h2>
                 <div class="flexbox">
-                    {% include list.html collection="student" sort_by="start" %}
+                    {% include list.html collection="student" sort_by="name" %}
                     {% include list.html collection="postdoc" sort_by="start" %}
                 </div>
             <h2> Former members </h2>
