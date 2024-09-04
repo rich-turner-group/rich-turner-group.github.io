@@ -1,14 +1,15 @@
 
-    <div>
-        <article>
-            <h3 itemprop="headline"> {{post.name}} </h3>   
-            <p>
-                {% if post.website%} <a href="{{ post.website }}"> website</a> {% endif %}
-                {% if post.role %} <a> {{ post.role }}</a> {% endif %}
-                {% if post.start %} <a> | {{ post.start }}</a> {% endif %}
-                {% if post.end %} <a> -{{ post.end }} </a> {% endif %}
-                {% if post.thesis %} <a> | Thesis: {{ post.thesis }} </a> {% endif %}
-                {% if post.next %} <a> | Next: {{ post.next_role }} </a> {% endif %}
-            </p>
-        </article>
+    <div class="fl w-10 w-third-ns link dim ba bw0 pa3 mv3 mh3 mh0-ns member-box"">
+        <!-- <article> -->
+            <div class=" pl3 ml3 bl bw1 bg-white pv4">
+                <a href="{{ post.website }}">
+                <h3 class="mt0"> {{post.name}} </h3>   
+                    {% if post.role %} <a> {{ post.role }}</a> {% endif %}
+                    {% if post.start %} <a> | {{ post.start }}</a> {% endif %}
+                    {% if post.end %} <a> -{{ post.end }} </a> {% endif %}
+                {% if post.thesis %} <br><a> <b>Thesis</b>: {{ post.thesis }} </a> {% endif %}
+                {% if post.next_role %}<br> <a> <b>Next</b>: {{ post.next_role }} </a> {% endif %}
+                </a>
+            </div>
+        <!-- </article> -->
     </div>
