@@ -1,5 +1,5 @@
 ---
-name: "Cuong V. Nguyen"
+name: "Cuong Nguyen"
 role: "Postdoctoral researcher"
 start: "2016"
 end: "2018"

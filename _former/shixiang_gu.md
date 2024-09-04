@@ -1,5 +1,5 @@
 ---
-name: "Shixiang (Shane) Gu"
+name: "Shixiang Gu"
 role: "PhD student"
 start: "2014"
 end: "2019"
