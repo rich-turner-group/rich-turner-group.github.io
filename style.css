@@ -48,13 +48,15 @@ a:hover, a:focus {
 .menu-in-about {
     /* width: 10em; */
     flex: 1;
-    max-width: 13em;
+    max-width: 12em;
 
     margin-top: 0.5em;
     margin-left: 1em;
-    margin-right: 1em;
+    margin-right: 0em;
+    padding-right: max(1em);
+    margin-top: 0.5em;
     /* margin-top: 1em; */
-    /* padding-top: 0.5em; */
+    padding-top: 0.5em;
     padding-bottom: 0.5em;
 
     border-width: .25rem;
@@ -68,8 +70,8 @@ a:hover, a:focus {
 .menu-title {
     font-size: 1.5rem;
     font-weight: 900;
-    margin-top: 0.5em;
-    margin-bottom: 0.9rem;
+    margin-top: 0.2em;
+    margin-bottom: 0.4rem;
     /* padding-bottom: 0em; */
 
 
@@ -78,8 +80,10 @@ a:hover, a:focus {
     display: block;
     margin-right: 2em;
     margin-left: 0em;
-    margin-bottom: 1em;
-    margin-top: 0em;
+    /* margin-bottom: 0.5em;
+    margin-top: 0.5em; */
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
     font-size: 0.75rem;
     text-transform: uppercase;
     /* Mid-gray */
@@ -96,9 +100,9 @@ a:hover, a:focus {
 }
 
 .about {
-    max-width: 30em;
-    margin-left: 1em;
-    margin-right: 1em;
+    max-width: 32em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-top: 0em;
     padding-top: 0em;
 
@@ -137,11 +141,72 @@ a:hover, a:focus {
     .menu-link {
         display: inline;
     }
+    .menu-title {
+        /* Hide */
+        display: none;
+    }
 }
 
 
+.news-wrapper-left {
+    margin-bottom: 1.0em;
+    max-width: 100%;
+    min-height: 8em;
+    position: relative;
+    border-left: 2em solid;
+    border-color: rgb(255, 255, 255);
+    padding: 0em;
+}
+.news-wrapper-left-title {
+      font-size: 1rem;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      margin: 0em;
+      position: absolute;
+      height: 2em;
+      padding-top: 0.4rem;
+      border-bottom: 0.2em solid black;
+      display:inline;
+      white-space: nowrap;
+      padding-left: 1em;
+      text-align: right;
+      bottom: 100%;
+      right: 100%;
+    transform: rotate(270deg);
+    transform-origin: 100% 100%;
+}
+
+.news-wrapper-right {
+    margin-bottom: 1.0em;
+    max-width: 100%;
+    min-height: 8em;
+    position: relative;
+    border-right: 2em solid;
+    border-color: rgb(255, 255, 255);
+    padding: 0em;
+}
+.news-wrapper-right-title {
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0em;
+    position: absolute;
+    height: 2em;
+    padding-top: 0.4rem;
+    text-align: left;
+    border-bottom: 0.2em solid black;
+    display:inline;
+    width: 8em;  /* Same as min-height of the parent */ 
+    bottom: 100%;
+    left: 100%;
+    transform: rotate(90deg);
+    transform-origin: 0 100%;
+}
+
 a p::after {
-    content: "↗";
+    /* content: "↗"; */
     display: inline-block;
     font-family: mono;
     margin: 0 0 0 2px;
@@ -183,4 +248,7 @@ a p::after {
     /* min-width: 100%; */
     object-fit: cover; /* The image will cover the container maintaining aspect ratio */
     object-position: center; /* Centers the image within the container */
+    box-shadow:
+    -50px -50px 0 -40px red,
+    50px 50px 0 -40px red;
   }
