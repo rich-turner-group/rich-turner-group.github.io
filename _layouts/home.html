@@ -129,12 +129,13 @@
                     {% include list.html collection="student" sort_by="start" %}
                 </div>
             <h2> Former members </h2>
-                <div>
-                    {% include list.html collection="former" sort_by="start" sort_order="reverse"%}
+                <div class=" mw9 center ph3-ns">
+                    <div class=" flex flex-wrap cf ph2-ns">
+                        {% include list.html collection="former" sort_by="start" sort_order="reverse"%}
+                
+                    </div>
                 </div>
             </div>
-            
-        </div>
         </article>
 <!-- </section> -->
 
