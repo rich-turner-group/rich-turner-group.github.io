@@ -10,9 +10,18 @@
 
 {%- for post in entries -%}
 {%- unless post.hidden -%}
-    {% if include.collection == "publications" %}
+    {% if include.collection == "papers" %}
         {% include publication_item.html %}
     {% endif %}
+    
+    {% if include.collection == "tutorials" %}
+        {% include publication_item.html %}
+    {% endif %}
+    
+    {% if include.collection == "blogs" %}
+        {% include publication_item.html %}
+    {% endif %}
+    
     {% if include.collection == "news" %}
         {%- include news_item.html %}
     {% endif %}
