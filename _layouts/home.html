@@ -54,7 +54,6 @@
             </div>
             <div class="about">
                 {% include list.html collection="about" %}
-
             </div>
             <div class="menu-in-about" style="visibility: hidden;">
                 </div>
@@ -62,32 +61,36 @@
         </div>
 
     </section>
-    <section class="center" style="max-width: 56em;">
+    <section class="center pb3" style="max-width: 56em;">
         <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Selected work</h1>
+        
+        <div class="news-wrapper-left">
+            <h3 class="news-wrapper-left-title sans-serif fw1">Papers</h3>
+            <div class="flex center pl2 pr0 mr0 pb2">
+                {% include list.html collection="papers" sort_by="year" sort_order="reverse"%}
+            </div>
+        </div>
+
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Tutorials</h3>
             <!-- <div class="bl bw3 bc-gray bg-yellow" style="width:100%; height: 100%; position: absolute;"></div> -->
             <div class="flex center pl2 pr0 mr0 pb2">
-                {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
+                {% include list.html collection="tutorials" sort_by="year" sort_order="reverse"%}
             </div>
         </div>
         
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Blog posts</h3>
             <div class="flex center pl2 tl pb2">
-                {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
+                {% include list.html collection="blogs" sort_by="year" sort_order="reverse"%}
             </div>
         </div>
-        <div class="news-wrapper-left">
-            <h3 class="news-wrapper-left-title sans-serif fw1">Papers</h3>
-            <div class="flex center pl2 pr0 mr0 pb2">
-                {% include list.html collection="publications" sort_by="date" sort_order="reverse"%}
-            </div>
-        </div>
+
     </section>
 
     <article class="center"  style="max-width: 56em;" id="news">
-        <h1 class="f3 lh-title bt bw2 pt2 ttu fw1">Recent news</h1>
+        <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Recent news </h1>
+        <!--h1 class="f3 lh-title bt bw2 pt2 ttu fw1">Recent news</h1-->
         <!-- <div class="center lh-copy ma2 pa1">
             <div class="w-100-l w-100-m w-100-s center ph3">
             </div>
@@ -102,7 +105,8 @@
     <article class="center"  style="max-width: 56em;" id="apply">
         <div class="center lh-copy ma2 pa1">
             <div class="w-100-l w-100-m w-100-s center">
-                <h1 class="f2 fw1 lh-title bb bw2 pb1">Apply</h1>
+                <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Apply </h1>
+                <!--h1 class="f2 fw1 lh-title bb bw2 pb1">Apply</h1-->
             </div>
         </div>
         <div>
@@ -116,7 +120,8 @@
         <div class="center w-100 lh-copy ma2 pa1">
             <div class="center">
 
-                <h1 class="f2 fw1 lh-title bb bw2 pb1">Group members</h1>
+                <!-- class="f2 fw1 lh-title bb bw2 pb1">Group members</h1-->
+                <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Group members </h1>
             </div>
             
             <h2>Current members </h2>
