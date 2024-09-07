@@ -9,7 +9,7 @@ ul {
 }
 
 li::marker {
-    color: rgb(194, 194, 194);
+    color: rgb(228, 228, 228);
 }
 
 /* Links */
@@ -234,6 +234,38 @@ a p::after {
     font-size: 10px;
     line-height: 9px;
 }
+
+.section-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1rem, 1.1904761905vw, 1.1111111111rem);
+    line-height: 1.35;
+    font-weight: 600;
+    margin: 0 0 clamp(1.3333333333rem, 2.380952381vw, 2.2222222222rem);
+}
+
+.section-header span {
+    display: block
+}
+
+.section-header .divider {
+    background: #000000;
+    height: 2px;
+    flex: 1;
+    margin: 0 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem)
+}
+
+.section-header h1 {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    font-weight: 300;
+}
+
 
 .member-box a {
     color: black;
