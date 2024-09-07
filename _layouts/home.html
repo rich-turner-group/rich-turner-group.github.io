@@ -20,7 +20,7 @@
         <div class="db w-100 tc bg-black white cover flex flex-column" id="profile-cover">
             <div class="w-100 v-top" style="margin-bottom: auto;">
                 <header class="white-60">
-                    <h2 class="f6 fw1 ttu tracked mb2 lh-title">Home | Group | Apply</h2>
+                    <h2 class="f6 fw1 ttu tracked mb2 lh-title">Home | About | News | Apply | Group</h2>
                     <!-- <h3 class="f6 fw1 lh-title">Maybe a quote here</h3> -->
                 </header>
             </div>
@@ -56,14 +56,14 @@
                 {% include list.html collection="about" %}
             </div>
             <div class="menu-in-about" style="visibility: hidden;">
-                </div>
+            </div>
 
         </div>
 
     </section>
     <section class="center pb3" style="max-width: 56em;">
         <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Selected work</h1>
-        
+
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Papers</h3>
             <div class="flex center pl2 pr0 mr0 pb2">
@@ -78,7 +78,7 @@
                 {% include list.html collection="tutorials" sort_by="year" sort_order="reverse"%}
             </div>
         </div>
-        
+
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Blog posts</h3>
             <div class="flex center pl2 tl pb2">
@@ -88,7 +88,7 @@
 
     </section>
 
-    <article class="center"  style="max-width: 56em;" id="news">
+    <article class="center" style="max-width: 56em;" id="news">
         <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Recent news </h1>
         <!--h1 class="f3 lh-title bt bw2 pt2 ttu fw1">Recent news</h1-->
         <!-- <div class="center lh-copy ma2 pa1">
@@ -96,13 +96,13 @@
             </div>
         </div> -->
         <div>
-          <div class="flex center tl ph0 w-100-l w-100-m w-100-s">
-            {% include list.html collection="news" sort_by="date" sort_order="reverse"%}
-          </div>
+            <div class="flex center tl ph0 w-100-l w-100-m w-100-s">
+                {% include list.html collection="news" sort_by="date" sort_order="reverse"%}
+            </div>
         </div>
-      </article>
+    </article>
 
-    <article class="center"  style="max-width: 56em;" id="apply">
+    <article class="center" style="max-width: 56em;" id="apply">
         <div class="center lh-copy ma2 pa1">
             <div class="w-100-l w-100-m w-100-s center">
                 <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Apply </h1>
@@ -111,38 +111,38 @@
         </div>
         <div>
             <div class="center tl pr3 w-100-l w-100-m w-100-s">
-               {% include list.html collection="apply" %}
+                {% include list.html collection="apply" %}
             </div>
         </div>
     </article>
 
-      <article class="center" style="max-width: 56em;" id="group-members">
+    <article class="center" style="max-width: 56em;" id="group-members">
         <div class="center w-100 lh-copy ma2 pa1">
             <div class="center">
 
                 <!-- class="f2 fw1 lh-title bb bw2 pb1">Group members</h1-->
                 <h1 class="f3 lh-title bb bw1 pb1 pt0 tl ttu tracked fw3 sans-serif"> Group members </h1>
             </div>
-            
+
             <h2>Current members </h2>
             <h3>Postdocs</h3>
-                <div class="flexbox">
-                    {% include list.html collection="postdoc" sort_by="start" %}
-                </div>
+            <div class="flexbox">
+                {% include list.html collection="postdoc" sort_by="start" %}
+            </div>
             <h3>PhD Students</h3>
-                <div class="flexbox">
-                    {% include list.html collection="student" sort_by="start" %}
-                </div>
+            <div class="flexbox">
+                {% include list.html collection="student" sort_by="start" %}
+            </div>
             <h2> Former members </h2>
-                <div class="center ph1-ns">
-                    <div class=" flex flex-wrap cf ph1-ns">
-                        {% include list.html collection="former" sort_by="end" sort_order="reverse"%}
-                
-                    </div>
+            <div class="center ph1-ns">
+                <div class=" flex flex-wrap cf ph1-ns">
+                    {% include list.html collection="former" sort_by="end" sort_order="reverse"%}
+
                 </div>
             </div>
-        </article>
-<!-- </section> -->
+        </div>
+    </article>
+    <!-- </section> -->
 
 </body>
 
