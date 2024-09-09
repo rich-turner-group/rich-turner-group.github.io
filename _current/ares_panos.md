@@ -1,5 +1,5 @@
 ---
-name: "Aristeidis (Ares) Panos"
+name: "Ares Panos"
 website: https://www.aristeidispanos.com
 picture: images/members/ares_panos.jpg
 role: "Postdoctoral researcher"
