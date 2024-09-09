@@ -397,7 +397,7 @@ a p::after {
 
 .members {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem);
     column-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem);
     row-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem)
