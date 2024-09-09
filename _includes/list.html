@@ -25,17 +25,45 @@
     {% if include.collection == "news" %}
         {%- include news_item.html %}
     {% endif %}
-    {% if include.collection == "current" %}
-        {% include current_member.html %}
-    {% endif %}
+
     {% if include.collection == "former" %}
         {% include former_member.html %}
     {% endif %}
+
     {% if include.collection == "apply" %}
         {% include paragraph.html %}
     {% endif %}
+    
     {% if include.collection == "about" %}
         {% include paragraph.html %}
     {% endif %}
 {%- endunless -%}
 {%- endfor -%}
+
+{% if include.collection == "current"%}
+
+    {%- for post in entries -%}
+    {%- unless post.hidden -%}
+        {% if post.role == "Postdoctoral researcher" %}
+        {% include current_member.html %}
+        {% endif %}
+    {%- endunless -%}
+    {%- endfor -%}
+
+    {%- for post in entries -%}
+    {%- unless post.hidden -%}
+        {% if post.role == "PhD student" %}
+        {% include current_member.html %}
+        {% endif %}
+    {%- endunless -%}
+    {%- endfor -%}
+
+    {%- for post in entries -%}
+    {%- unless post.hidden -%}
+        {% if post.role == "Research assistant" %}
+        {% include current_member.html %}
+        {% endif %}
+    {%- endunless -%}
+    {%- endfor -%}
+
+{% endif %}

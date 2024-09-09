@@ -33,12 +33,12 @@
             <!-- If collection is "postdoc", say "Postdoc", if collection is "student", say PhD -->
             {% if post.role == "Postdoctoral researcher" %}
             Postdoc
-            {% endif %}
-            {% if post.role == "Research assistant" %}
+            {% elsif post.role == "Research assistant" %}
             Research assistant
-            {% endif %}
-            {% if post.role == "PhD student" %}
+            {% elsif post.role == "PhD student" %}
             PhD
+            {% else %}
+            {{ post.role }}
             {% endif %}
         </a>
 
