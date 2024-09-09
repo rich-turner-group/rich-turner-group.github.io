@@ -31,9 +31,13 @@
 
         <a class="role">
             <!-- If collection is "postdoc", say "Postdoc", if collection is "student", say PhD -->
-            {% if post.collection == "postdoc" %}
+            {% if post.role == "Postdoctoral researcher" %}
             Postdoc
-            {% else %}
+            {% endif %}
+            {% if post.role == "Research assistant" %}
+            Research assistant
+            {% endif %}
+            {% if post.role == "PhD student" %}
             PhD
             {% endif %}
         </a>

@@ -25,10 +25,7 @@
     {% if include.collection == "news" %}
         {%- include news_item.html %}
     {% endif %}
-    {% if include.collection == "postdoc" %}
-        {% include current_member.html %}
-    {% endif %}
-    {% if include.collection == "student" %}
+    {% if include.collection == "current" %}
         {% include current_member.html %}
     {% endif %}
     {% if include.collection == "former" %}

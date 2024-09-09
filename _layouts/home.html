@@ -133,8 +133,7 @@
             <section class="members-block">
                 <!-- <section class="interview-block" id="featured-interviews"> -->
                 <div class="members">
-                    {% include list.html collection="postdoc" sort_by="start" %}
-                    {% include list.html collection="student" sort_by="start" %}
+                    {% include list.html collection="current" sort_by="role" %}
                 </div>
             </section>
         </div>
@@ -145,7 +144,7 @@
         </div>
         <div class="center ph1-ns">
             <div class=" flex flex-wrap cf ph1-ns">
-                {% include list.html collection="former" sort_by="role" sort_by="end" sort_order="reverse"%}
+                {% include list.html collection="former" sort_by="end" sort_order="reverse"%}
 
             </div>
         </div>

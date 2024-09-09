@@ -36,10 +36,7 @@ plugins:
 
 # Collections
 collections:
-  postdoc:
-    output: true
-    permalink: /:collection/:path/
-  student:
+  current:
     output: true
     permalink: /:collection/:path/
   former:

@@ -2,7 +2,7 @@
 name: "Aristeidis (Ares) Panos"
 website: https://www.aristeidispanos.com
 picture: images/members/ares_panos.jpg
-role: "Postdoctoral Researcher"
+role: "Postdoctoral researcher"
 start: "2022"
 interests:
     - "bayesian inference"
