@@ -1,0 +1,40 @@
+<div class="featured-interview" style="background-color: #efede9">
+    <div class="feature-interview-meta">
+        <div class="top">
+            <a href="https://spaces.is/loversmagazine/interviews/ayodeji-olagbaiye"
+                class="featured-interview-name fit sans-serif"
+                style="white-space: nowrap; display: inline-block; font-size: 16.470447px;">
+                <!-- Ayodeji Olagbaiye -->
+                {{ post.name }}
+            </a>
+            <div class="role">
+
+                {% if post.collection == "postdoc" %}
+                Postdoc
+                {% else %}
+                PhD
+                {% endif %}
+
+                <!-- <a href="https://spaces.is/loversmagazine/interviews/designrole:Product-Designer">Product Designer</a>
+                at Kuda -->
+            </div>
+        </div>
+        <span class="divider"></span>
+        <p class="featured-interview-bio">
+            {% if post.interests %}
+            {% for tag in post.interests %}
+            {% if forloop.first == false %}<span>, </span>{% endif %}
+            <span>{{ tag }}</span>
+            {% endfor %}
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="featured-interview-photo">
+        <a href="https://spaces.is/loversmagazine/interviews/ayodeji-olagbaiye">
+            <div style="width: 100%">
+                <img class="lazyautosizes lazyloaded" alt="{{ post.name }}" src="{{ post.picture }}">
+            </div>
+        </a>
+    </div>
+</div>
