@@ -1,11 +1,26 @@
+<a href="{{post.link}}" class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray"
+    style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <div class="flex flex-column" style="height: 100%;">
 
-<a href="{{post.link}}"
-    class="link dim w-50-l w-100-s w-50-m outline ba mr3 ph2 black-80 bg-light-gray">
-    <p class="f7 ttu tracked bb mb0 pb2">
-        {{ post.type }}
-    </p>
-    <h3 class="f5 fw6 avenir mt3 lh-copy">
-        <span class="fw7"> {{ post.title }} </span> with {{ post.venue }} ({{post.date |date:'%b %Y'}})
-    </h3>
-    
+        <div class="flex w-100 v-top" style="margin-bottom: auto;         flex-direction: column;
+        justify-content: space-between;">
+
+            <p class="f7 ttu tracked bb mb0 pb2">
+                {{ post.venue }}
+            </p>
+            <h3 class="f4 fw6 avenir mt3 lh-copy">
+                <span class="fw6"> {{ post.title }} </span>
+            </h3>
+        </div>
+        <div class="news-sub-info v-btm">
+            <div class="news-type">
+                {{ post.type }}
+            </div>
+            <span class="divider"></span>
+            <div class="date">
+                {{post.date |date:'%b %Y'}}
+            </div>
+        </div>
+    </div>
+
 </a>

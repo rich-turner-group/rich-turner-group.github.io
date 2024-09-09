@@ -116,8 +116,8 @@ a:focus {
     margin-left: 1.0em;
     margin-right: 0.5em;
     margin-top: 0em;
-    padding-top: 0.2em;
-    border-left: 1px solid rgb(228, 228, 228);
+    padding-top: 0.6em;
+    /* border-left: 1px solid rgb(228, 228, 228); */
     /* border-right: 0.05em solid rgb(228, 228, 228); */
 
     font-size: 1rem;
@@ -260,51 +260,237 @@ a p::after {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
-    text-align: left;
+    text-align: right;
     line-height: 1.25;
     letter-spacing: .1em;
     font-weight: 300;
 }
 
+.section-subheader {
+    color: #818181;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1rem, 1.1904761905vw, 1.1111111111rem);
+    line-height: 1.35;
+    font-weight: 600;
+    /* margin: 0 0 clamp(1.3333333333rem, 2.380952381vw, 2.2222222222rem); */
+}
 
-.member-box a {
+.section-subheader span {
+    display: block
+}
+
+.section-subheader .divider {
+    background: #7f7f7f;
+    height: 1px;
+    flex: 1;
+    /* margin: 0 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem) */
+    margin: 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem) 0 0;
+}
+
+.section-subheader h2 {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    font-weight: 300;
+}
+
+/* News */
+.news-sub-info {
+    /* margin: 0 0 0 0; */
+    margin-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    /* margin-right: 0.6rem; */
+    /* margin-top: auto; */
+    /* padding: 0 0 0 0; */
+    vertical-align: bottom;
+    /* margin-top: auto; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* color: #818181; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1rem, 1.1904761905vw, 1.1111111111rem);
+    line-height: 1.35;
+    font-weight: 300;
+    font-size: 0.7rem;
+    /* margin: 0 0 clamp(1.3333333333rem, 2.380952381vw, 2.2222222222rem); */
+    /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
+}
+
+.news-sub-info .news-type {
+    /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    text-align: left;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    /* font-weight: 300; */
+}
+
+.news-sub-info .date {
+    /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
+    /* text-transform: uppercase; */
+    text-align: right;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    /* font-weight: 300; */
+}
+
+
+.news-sub-info span {
+    display: block
+}
+
+.news-sub-info .divider {
+    background: #000000;
+    height: 1px;
+    flex: 1;
+    margin-left: clamp(.6888888889rem, 1.4285714286vw, 1.0333333333rem);
+    margin-right: clamp(.6888888889rem, 1.4285714286vw, 1.0333333333rem);
+}
+
+
+/* .member-box a {
     color: black;
 }
 
 .member-image {
-    /* max-width: 30%; */
-    /* Specify a width if you want the div to take up that amount of the parent container */
     width: 100%;
     height: 0;
-    /* Padding-top gives the container a fixed aspect ratio of 1:1 (square) */
     padding-top: 100%;
     position: relative;
     overflow: hidden;
-    /* Ensures the image is clipped to the container's bounds */
     border-style: solid;
-    /* border-color: gray; */
     border-color: black;
     border-width: 0.125em;
-    /* border-radius: 2%; */
 }
 
 .member-image img {
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 100%;
-    height: 100%;
-    padding: 0%; */
     width: 84%;
     height: 84%;
     padding: 8%;
-    /* padding-top: 100%; */
-    /* min-width: 100%; */
     object-fit: cover;
-    /* The image will cover the container maintaining aspect ratio */
     object-position: center;
-    /* Centers the image within the container */
     box-shadow:
         -50px -50px 0 -40px red,
         50px 50px 0 -40px red;
+} */
+
+/* New members section */
+
+
+.members-block {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem) 0
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem);
+    column-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem);
+    row-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem)
+}
+
+@media (min-width: 640px) {
+    .members {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 920px) {
+    .members {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+.members .member:last-child {
+    display: none
+}
+
+@media (min-width: 640px) {
+    .members .member:last-child {
+        display: block
+    }
+}
+
+.members .member {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.members .member .member-photo {
+    font-size: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem);
+    cursor: pointer
+}
+
+.members .member img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: #da854d;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    /* The image will cover the container maintaining aspect ratio */
+    object-position: center;
+}
+
+.members .member img:hover {
+    opacity: .7;
+    /* ease in and out */
+    transition: opacity .15s ease-in-out;
+}
+
+.members .member .member-meta {
+    display: flex;
+    flex-direction: column
+}
+
+.members .member .member-meta .role {
+    color: rgb(98, 98, 98);
+    display: block;
+    margin: 0 0 clamp(.2222222222rem, .4761904762vw, .4444444444rem);
+    font-size: clamp(.6666666667rem, .7738095238vw, .7222222222rem);
+    letter-spacing: .12em;
+    text-transform: uppercase
+}
+
+.members .member .member-meta .member-name-company {
+    /* margin: .2rem; */
+    margin-top: .1rem;
+    margin-bottom: .2rem;
+    font-size: clamp(1rem, 1.1904761905vw, 1.3111111111rem);
+    line-height: 1.35;
+    font-weight: 600;
+    /* font-weight: bolder; */
+    /* letter-spacing: 0.2em; */
+}
+
+/* .members .member .member-meta .member-name-company .pronoun {
+    font-weight: 400;
+    opacity: .7
+} */
+
+.members .member .member-meta .member-bio {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 0.8rem;
+    /* font-size: clamp(.8888888889rem, 1.0714285714vw, 1rem); */
+    line-height: 1.35;
+    font-weight: 200;
 }

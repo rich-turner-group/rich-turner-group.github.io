@@ -1,24 +1,72 @@
-<div class="w-100 flex link dim ba bw0 pa3 mv3 mh3 mh0-ns member-box">
-    <!-- <article> -->
-        <div class="w-10">
-            <div class="member-image">
-                <a href="{{ post.website }}">
-                    <img src="{{post.picture}}" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="w-90 pl3 ml3 bl bw1">
+<!-- <div class="w-50 link dim ba bw0 mv3 mh0-ns member-box">
+    <div class="w-20">
+        <div class="member-image">
             <a href="{{ post.website }}">
-            
+                <img src="{{post.picture}}" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="w-80 pl3 ml3 bl bw1">
+        <a href="{{ post.website }}">
+
             <h3 class="mt0"> {{post.name}} </h3>
 
             <p class="">
-                <!-- {% if post.website %} <a href="{{ post.website }}"> website</a> {% endif %} -->
                 {% if post.interests %}
                 {% for tag in post.interests %}
-                    <span> | {{ tag }} </span> {% endfor %} {% endif %}
+                <span> | {{ tag }} </span> {% endfor %} {% endif %}
             </p>
-            </a>
+        </a>
+    </div>
+</div> -->
+
+
+<section class="member">
+    <header class="member-photo">
+        <div style="width:100%;background-color: #C3C2C7;">
+            <img class="lazyautosizes lazyloaded" src="{{post.picture}}" sizes="256px">
         </div>
-    <!-- </article> -->
-</div>
+    </header>
+    <article class="member-meta">
+
+        <a class="role">
+            <!-- If collection is "postdoc", say "Postdoc", if collection is "student", say PhD -->
+            {% if post.collection == "postdoc" %}
+            Postdoc
+            {% else %}
+            PhD
+            {% endif %}
+        </a>
+
+        <!-- <a class="member-link" href="https://spaces.is/loversmagazine/members/kalyn-krivacek"> -->
+        <h2 class="member-name-company">
+            <span class="name athelas">
+                {{ post.name }}
+                <!-- {% assign names = post.name | split: ' ' %}
+                {% if names.size > 1 %}
+                {{ names[0] }}<br>
+                {% for i in (1..names.size) %}
+                {% if forloop.last == false %}
+                {{ names[forloop.index] }}
+                {% endif %}
+                {% endfor %}
+                {% else %}
+                {{ post.name }}
+                {% endif %} -->
+            </span>
+            <!-- <span class="company">
+                    Superhuman </span> -->
+        </h2>
+        <!-- </a> -->
+        <noindex>
+            <p class="member-bio ">
+                {% if post.interests %}
+                {% for tag in post.interests %}
+                {% if forloop.first == false %}<span>, </span>{% endif %}
+                <span>{{ tag }}</span>
+                {% endfor %}
+                {% endif %}
+            </p>
+        </noindex>
+    </article>
+</section>
