@@ -1,20 +1,38 @@
-
-    <div class="fl w-100 w-third-ns link dim ba bw0 pa2 mv2 mh2 mh0-ns member-box"">
-        <!-- <article> -->
-            <div class=" pl3 ml3 bl bw1 bg-white pv1">
-                <a href="{{ post.website }}">
-                <h3 class="mt0-ns mb0-ns"> {{post.name}} </h3>
-                {% if post.role %} <p class="mt0-ns mb2-ns"> {{ post.role }} </a>{% endif %}
-                    {% if post.start != post.end %}
-                        {% if post.start %} | {{ post.start }} {% endif %}
-                        {% if post.end %} -{{ post.end }} </p> {% endif %}
-                    {% endif %}
-                    {% if post.start == post.end %}
-                        {% if post.start %} | {{ post.start }} {% endif %}
-                    {% endif %}
-                {% if post.thesis %} <p class="mt2-ns mb2-ns"> <b>Thesis</b>: {{ post.thesis }} </p>{% endif %}
-                {% if post.next_role %} <p class="mt2-ns mb2-ns"> <b>Next</b>: {{ post.next_role }} </p> {% endif %}
-                </a>
-            </div>
-        <!-- </article> -->
+<div class="fl w-100 w-third-ns link dim ba bw0 pa2 mv2 mh2 mh0-ns member-box">
+<a href="{{ post.website }}" style="width: 100%; height=100%; display: block; color: black;">
+    <!-- <article> -->
+    <div class=" pl3 ml3 bl bw1 bg-white pv1">
+        <h3 class="mt0-ns mb0-ns"> {{post.name}} </h3>
+        <p class="mt0-ns mb2-ns"> 
+        {% if post.role %}
+            {{ post.role }}
+        {% endif %}
+        {% if post.start != post.end %}
+            {% if post.start %}
+                | {{ post.start }}
+            {% endif %}
+            {% if post.end %}
+                -{{ post.end }}
+            {% endif %}
+        {% endif %}
+        {% if post.start == post.end %}
+            {% if post.start %}
+                | {{ post.start }}
+            {% endif %}
+        {% endif %}
+        </p> 
+        {% if post.thesis %}
+            <p class="mt2-ns mb2-ns">
+                <b>Thesis</b>: {{ post.thesis }}
+            </p>
+        {% endif %}
+        {% if post.next_role %}
+            <p class="mt2-ns mb2-ns">
+                <b>Next</b>: {{ post.next_role }}
+            </p>
+        {% endif %}
+        </a>
     </div>
+    <!-- </article> -->
+    </a>
+</div>
