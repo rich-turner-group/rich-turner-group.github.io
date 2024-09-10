@@ -429,6 +429,7 @@ a p::after {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    color: black;
 }
 
 .members .member .member-photo {
@@ -451,10 +452,10 @@ a p::after {
     object-position: center;
 }
 
-.members .member img:hover {
+.members .member:hover {
     opacity: .7;
-    /* ease in and out */
-    transition: opacity .15s ease-in-out;
+    color: #c04d00;
+    transition: opacity .2s ease-in-out, color .15s ease-in-out;
 }
 
 .members .member .member-meta {
