@@ -2,7 +2,7 @@
 title: About
 ---
 
-I'm Rich Turner. I'm a Professor of Machine Learning in the Department of Engineering at the University of Cambridge and a Visiting Researcher at Microsoft Research Cambridge.
+I'm Rich Turner, a professor in the [Machine Learning Group](https://mlg.eng.cam.ac.uk) at the University of Cambridge and a visiting researcher at Microsoft Research.
 
 Over the last two years my work has been presented in oral presentations at top machine learning conferences including AAAI, AIStats, ICLR, ICML and NeurIPS and featured on BBC Radio 5 Live’s The Naked Scientist, BBC World Service’s Click and in Wired Magazine.
 

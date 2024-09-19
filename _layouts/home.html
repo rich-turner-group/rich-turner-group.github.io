@@ -14,27 +14,22 @@
     <!-- <link href="style_lovers_magazine.css" rel="stylesheet" type="text/css"> -->
 </head>
 
-<body class="athelas">
-    <article class="athelas">
+<body class="avenir">
+    <article class="avenir">
         <div class="db w-100 tc bg-black white cover flex flex-column" id="profile-cover">
             <div class="w-100 v-top" style="margin-bottom: auto;">
                 <header class="white-50">
-                    <h2 class="f6 fw1 mb2 lh-title">
-                        <a class="link white" style="opacity: 0.7;" href="https://mlg.eng.cam.ac.uk">Machine Learning
-                            Group</a>
-                        at Department of
-                        Engineering, Cambridge
-                    </h2>
+                    <h2 class="f6 fw1 mb2 lh-title"> </h2>
                     <!-- <h3 class="f6 fw1 lh-title">Maybe a quote here</h3> -->
                 </header>
             </div>
             <div class="w-100 v-btm">
                 <!-- <h1 class="f1 f-headline-l fw1 i white-60">Richard Turner</h1> -->
                 <blockquote class="ph0 ph2 center tracked">
-                    <p class="f5 ttu tracked fs-normal mb0">Richard turner</p>
-                    <p class="f7 fw1 white-90 mb0">
-                        Professor of Machine Learning | University of Cambridge
-                    </p>
+                    <!-- p class="f4 ttu tracked fs-normal mb0"> Richard Turner</p-->
+                    <!--p class="f6 fw1 white-90 mb0">
+                         Machine Learning Group | Department of Engineering | University of Cambridge
+                    </p-->
                 </blockquote>
             </div>
         </div>
@@ -52,6 +47,7 @@
                 </h1> -->
                 <a class="menu-link" href="index.html">Home</a>
                 <a class="menu-link" href="#about-and-menu">About</a>
+                <a class="menu-link" href="#work">Work</a>
                 <a class="menu-link" href="#news">News</a>
                 <a class="menu-link" href="#apply">Apply</a>
                 <a class="menu-link" href="#group-members">Group</a>
@@ -60,14 +56,14 @@
             <div class="about">
                 {% include list.html collection="about" %}
             </div>
-            <div class="menu-in-about" style="visibility: hidden;">
-            </div>
+            <!-- div class="menu-in-about" style="visibility: hidden;">
+            </div-->
 
         </div>
 
     </section>
     <section class="center mt4" style="max-width: 56em;">
-        <div class="section-header">
+        <div class="section-header" id="work">
             <h1> Selected work</h1>
             <div class="divider"></div>
         </div>
@@ -114,7 +110,7 @@
             <div class="divider"></div>
         </div>
         <div>
-            <div class="center tl pr3 w-100-l w-100-m w-100-s">
+            <div class="apply">
                 {% include list.html collection="apply" %}
             </div>
         </div>
@@ -126,8 +122,8 @@
             <div class="divider"></div>
         </div>
         <div class="section-subheader">
-            <div class="divider"></div>
             <h2>Current</h2>
+            <div class="divider"></div>
         </div>
         <div class="center w-100">
             <section class="members-block">
@@ -139,11 +135,11 @@
         </div>
 
         <div class="section-subheader">
-            <div class="divider"></div>
             <h2>Former</h2>
+            <div class="divider"></div>
         </div>
         <div class="center ph1-ns">
-            <div class=" flex flex-wrap cf ph1-ns">
+            <div class="flex flex-wrap cf ph1-ns">
                 {% include list.html collection="former" sort_by="end" sort_order="reverse"%}
 
             </div>
