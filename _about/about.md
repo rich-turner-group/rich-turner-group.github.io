@@ -2,17 +2,18 @@
 title: About
 ---
 
-I'm Rich Turner, a professor in the [Machine Learning Group](https://mlg.eng.cam.ac.uk) at the University of Cambridge and a visiting researcher at Microsoft Research.
+I'm Rich Turner, a Professor of Machine Learning in the [Machine Learning Group](https://mlg.eng.cam.ac.uk) at the University of Cambridge and a Research Lead, AI for Weather
+Prediction, at the [Alan Turing Institute](https://www.turing.ac.uk).
 
-Over the last two years my work has been presented in oral presentations at top machine learning conferences including AAAI, AIStats, ICLR, ICML and NeurIPS and featured on BBC Radio 5 Live’s The Naked Scientist, BBC World Service’s Click and in Wired Magazine.
+I am the Cambridge Lead for the EPSRC [Probabilistic AI Hub](https://www.probai.uk). 
 
-I have given keynote lectures and tutorials at the Machine Learning and Signal Processing Summer School, the International Conference on Machine Learning, Optimization & Data Science, and the Machine Learning Summer School. I also serve on the Steering Committee for the Cambridge Centre for Data Driven Discovery (C2D3) and have been awarded the Cambridge Students' Union Teaching Award for Lecturing.
+My previous roles include Visiting Researcher at Microsoft Research in the AI4Science and AI teams, Co-Director of the UKRI Centre for Doctoral Training in the Application of Artificial Intelligence to the study of Environmental Risks (AI4ER CDT), and Course Director of the Machine Learning and Machine Intelligence MPhil programme. I have received over £30 million of funding as a Principal or Co-Investigator. I've been awarded the Cambridge Students' Union Teaching Award for Lecturing.
 
 My current research interests include:
 
-* Generative models
-* Bayesian inference
-* Weather and climate predictions
+* Probabilistic Machine Learning Fundamentals including generative models and uncertainty-aware approaches
+* Environmental Prediction especially for weather and climate prediction
+* Spatio-temporal modelling
 
 Below you'll find information about my group.
 
