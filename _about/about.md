@@ -7,13 +7,13 @@ Prediction, at the [Alan Turing Institute](https://www.turing.ac.uk).
 
 I am the Cambridge Lead for the EPSRC [Probabilistic AI Hub](https://www.probai.uk). 
 
-My previous roles include Visiting Researcher at Microsoft Research in the AI4Science and AI teams, Co-Director of the UKRI Centre for Doctoral Training in the Application of Artificial Intelligence to the study of Environmental Risks (AI4ER CDT), and Course Director of the Machine Learning and Machine Intelligence MPhil programme. I have received over £30 million of funding as a Principal or Co-Investigator. I've been awarded the Cambridge Students' Union Teaching Award for Lecturing.
+My previous roles include Visiting Researcher at Microsoft Research in the [AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/) and AI teams, Co-Director of the UKRI Centre for Doctoral Training in the Application of Artificial Intelligence to the study of Environmental Risks ([AI4ER CDT](https://ai4er-cdt.esc.cam.ac.uk)), and Course Director of the [Machine Learning and Machine Intelligence MPhil](https://www.mlmi.eng.cam.ac.uk) programme. I have received over £30 million of funding as a Principal or Co-Investigator. I've been awarded the Cambridge Students' Union Teaching Award for Lecturing.
 
 My current research interests include:
 
-* Probabilistic Machine Learning Fundamentals including generative models and uncertainty-aware approaches
-* Environmental Prediction especially for weather and climate prediction
-* Spatio-temporal modelling
+* Probabilistic Machine Learning Fundamentals (including generative models and uncertainty-aware approaches)
+* Environmental Prediction (especially for weather, earth systems, and climate prediction)
+* Spatio-temporal Modelling (especially for scientific applications)
 
 Below you'll find information about my group.
 
