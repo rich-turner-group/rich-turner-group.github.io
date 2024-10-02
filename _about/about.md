@@ -13,7 +13,7 @@ My current research interests include:
 
 * Probabilistic Machine Learning Fundamentals (including generative models and uncertainty-aware approaches)
 * Environmental Prediction (especially for weather, earth systems, and climate prediction)
-* Spatio-temporal Modelling (especially for scientific applications)
+* Spatio-temporal Modelling (especially using a fusion of large-scale deep learning and probabilistic modelling for scientific applications)
 
 Below you'll find information about my group.
 
