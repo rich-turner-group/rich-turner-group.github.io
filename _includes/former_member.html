@@ -7,17 +7,16 @@
         {% if post.role %}
             {{ post.role }}
         {% endif %}
-        {% if post.start != post.end %}
-            {% if post.start %}
-                | {{ post.start }}
+        {% if post.start %}
+        {% if post.end %}
+            {% if post.start != post.end %}
+                 | {{post.start}}-{{post.end}}
             {% endif %}
-            {% if post.end %}
-                -{{ post.end }}
-            {% endif %}
+        {% endif %}
         {% endif %}
         {% if post.start == post.end %}
             {% if post.start %}
-                | {{ post.start }}
+                | {{post.start}}
             {% endif %}
         {% endif %}
         </p> 
