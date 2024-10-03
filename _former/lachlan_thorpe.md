@@ -1,6 +1,6 @@
 ---
 name: "Lachlan Thorpe"
-role: "Visiting Industrial Fellow"
+role: "Visiting industrial fellow"
 start: "2022"
 end: "2023"
 website: https://www.linkedin.com/in/lachlan-thorpe-534a56171/?originalSubdomain=uk
