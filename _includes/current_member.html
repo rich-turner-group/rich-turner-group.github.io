@@ -38,12 +38,9 @@
                     Company </span> -->
         </h2>
         <noindex>
-            <p class="member-bio ">
+            <p class="member-bio">
                 {% if post.interests %}
-                {% for tag in post.interests %}
-                {% if forloop.first == false %}<span>, </span>{% endif %}
-                <span>{{ tag }}</span>
-                {% endfor %}
+                    {{ post.interests | join: ", " }}
                 {% endif %}
             </p>
         </noindex>
