@@ -1,48 +1,51 @@
 <a class="member" href="{{ post.website }}">
-    <header class="member-photo">
-        <div style="width:100%; background-color: #C3C2C7;">
-            <img class="" src="{{post.picture}}">
-        </div>
-    </header>
-    <article class="member-meta">
-
-        <div class="role">
-            <!-- If collection is "postdoc", say "Postdoc", if collection is "student", say PhD -->
-            {% if post.role == "Postdoctoral researcher" %}
-            Postdoc
-            {% elsif post.role == "Research assistant" %}
-            Research assistant
-            {% elsif post.role == "PhD student" %}
-            PhD
-            {% else %}
-            {{ post.role }}
-            {% endif %}
-        </div>
-
-        <h2 class="member-name-company">
-            <span class="name">
-                {{ post.name }}
-                <!-- {% assign names = post.name | split: ' ' %}
-                {% if names.size > 1 %}
-                {{ names[0] }}<br>
-                {% for i in (1..names.size) %}
-                {% if forloop.last == false %}
-                {{ names[forloop.index] }}
-                {% endif %}
-                {% endfor %}
+{% comment %} <div class="fl w-100 h-100 flex flex-row"> {% endcomment %}
+    <img class="member-photo" src="{{post.picture}}">
+    {% comment %} <div class="w-50">
+        <header class="w-100 member-photo">
+            <div style="width:100%; background-color: #C3C2C7;">
+                <img class="" src="{{post.picture}}">
+            </div>
+        </header>
+    </div> {% endcomment %}
+    <div class="member-meta">
+            <div class="role">
+                <!-- If collection is "postdoc", say "Postdoc", if collection is "student", say PhD -->
+                {% if post.role == "Postdoctoral researcher" %}
+                Postdoc
+                {% elsif post.role == "Research assistant" %}
+                Research assistant
+                {% elsif post.role == "PhD student" %}
+                PhD
                 {% else %}
-                {{ post.name }}
-                {% endif %} -->
-            </span>
-            <!-- <span class="company">
-                    Company </span> -->
-        </h2>
-        <noindex>
-            <p class="member-bio">
-                {% if post.interests %}
-                    {{ post.interests | join: ", " }}
+                {{ post.role }}
                 {% endif %}
-            </p>
-        </noindex>
-    </article>
+            </div>
+
+            <h2 class="member-name-company">
+                <span class="name">
+                    {{ post.name }}
+                    <!-- {% assign names = post.name | split: ' ' %}
+                    {% if names.size > 1 %}
+                    {{ names[0] }}<br>
+                    {% for i in (1..names.size) %}
+                    {% if forloop.last == false %}
+                    {{ names[forloop.index] }}
+                    {% endif %}
+                    {% endfor %}
+                    {% else %}
+                    {{ post.name }}
+                    {% endif %} -->
+                </span>
+                <!-- <span class="company">
+                        Company </span> -->
+            </h2>
+            <noindex>
+                <p class="member-bio">
+                    {% if post.interests %}
+                        {{ post.interests | join: ", " }}
+                    {% endif %}
+                </p>
+            </noindex>
+    </div>
 </a>

@@ -416,35 +416,6 @@ a p::after {
 }
 
 
-/* .member-box a {
-    color: black;
-}
-
-.member-image {
-    width: 100%;
-    height: 0;
-    padding-top: 100%;
-    position: relative;
-    overflow: hidden;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.125em;
-}
-
-.member-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 84%;
-    height: 84%;
-    padding: 8%;
-    object-fit: cover;
-    object-position: center;
-    box-shadow:
-        -50px -50px 0 -40px red,
-        50px 50px 0 -40px red;
-} */
-
 /* New members section */
 
 
@@ -456,7 +427,7 @@ a p::after {
 
 .members {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     -moz-column-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem);
     column-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem);
     row-gap: clamp(.8888888889rem, 2.380952381vw, 2.2222222222rem)
@@ -464,51 +435,53 @@ a p::after {
 
 @media (min-width: 640px) {
     .members {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(1, 1fr)
     }
 }
 
 @media (min-width: 920px) {
     .members {
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
-.members .member:last-child {
-    display: none
-}
-
-@media (min-width: 640px) {
-    .members .member:last-child {
-        display: block
-    }
-}
 
 .members .member {
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    /* No gap between image and info */
+
+    /* display: flex; */
+    /* align-items: stretch; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 0; */
+    /* No gap between image and info */
+    /* font-family: sans-serif; */
+    /* color: black; */
 }
 
 .members .member .member-photo {
-    font-size: 0;
-    display: block;
-    overflow: hidden;
-    margin: 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem);
-    cursor: pointer
-}
-
-.members .member img {
     width: 100%;
-    aspect-ratio: 1/1;
+    height: auto;
     object-fit: cover;
-    background-color: #da854d;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    /* The image will cover the container maintaining aspect ratio */
-    object-position: center;
+    aspect-ratio: 1 / 1;
+    /* Maintain a square aspect ratio */
+
+    /* font-size: 0; */
+    /* display: block; */
+    /* overflow: hidden; */
+    /* margin: 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem); */
+    /* cursor: pointer; */
+    /* width: 50%; */
+    /* height: auto; */
+    /* object-fit: cover; */
+    /* aspect-ratio: 1 / 1; */
+    /* background-color: #da854d; */
+    /* top: 0; */
+    /* left: 0; */
+    /* object-position: center; */
 }
 
 .members .member:hover {
@@ -517,12 +490,37 @@ a p::after {
     transition: opacity .2s ease-in-out, color .15s ease-in-out;
 }
 
-.members .member .member-meta {
-    display: flex;
-    flex-direction: column
+.member-meta {
+    color: black;
+    /* border: 0.2em solid black; */
+    border-left-style: none;
+    border-top: 0.2em solid rgb(228, 228, 228);
+    border-bottom: 0.2em solid rgb(228, 228, 228);
+    border-right: 0.2em solid rgb(228, 228, 228);
+    /* Or any desired border style */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* Align text in center */
+    padding: 10px;
+    /* Optional padding for inner spacing */
+
+    /* display: flex; */
+    /* flex-direction: column */
+    /* width: 50%; */
+    /* border: 1px solid black; */
+    /* Or any desired border style */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* Align text in center */
+    /* padding: 10px; */
+    /* Optional padding for inner spacing */
 }
 
-.members .member .member-meta .role {
+.member-meta .role {
     color: rgb(98, 98, 98);
     display: block;
     margin: 0 0 clamp(.2222222222rem, .4761904762vw, .4444444444rem);
@@ -531,7 +529,7 @@ a p::after {
     text-transform: uppercase
 }
 
-.members .member .member-meta .member-name-company {
+.member-meta .member-name-company {
     /* margin: .2rem; */
     margin-top: .1rem;
     margin-bottom: .2rem;
@@ -547,10 +545,34 @@ a p::after {
     opacity: .7
 } */
 
-.members .member .member-meta .member-bio {
+.member-meta .member-bio {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
     font-size: 0.8rem;
     /* font-size: clamp(.8888888889rem, 1.0714285714vw, 1rem); */
     line-height: 1.35;
     font-weight: 200;
+}
+
+.former-member {
+    border-left: 0.2em solid black;
+}
+
+.former-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: clamp(.44444rem, 1.15vw, 1.111111rem);
+    column-gap: clamp(.444444rem, 1.15vw, 1.11111rem);
+    row-gap: clamp(.444444rem, 1.15vw, 1.11111rem);
+}
+
+@media (min-width: 640px) {
+    .former-members {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 920px) {
+    .former-members {
+        grid-template-columns: repeat(4, 1fr)
+    }
 }

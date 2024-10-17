@@ -1,37 +1,48 @@
-<div class="fl w-100 w-third-ns link dim ba bw0 pa2 mv2 mh2 mh0-ns member-box">
+{% comment %} <div class="fl w-100 w-third-ns link dim ba bw0 pa2 mv2 mh2 mh0-ns member-box" style="height=100%;"> {% endcomment %}
+<div class="former-member h-100 member-meta">
 <a href="{{ post.website }}" style="width: 100%; height=100%; display: block; color: black;">
     <!-- <article> -->
-    <div class=" pl3 ml3 bl bw1 bg-white pv1">
-        <h3 class="mt0-ns mb0-ns"> {{post.name}} </h3>
-        <p class="mt0-ns mb2-ns"> 
-        {% if post.role %}
-            {{ post.role }}
-        {% endif %}
-        {% if post.start %}
-        {% if post.end %}
-            {% if post.start != post.end %}
-                 | {{post.start}}-{{post.end}}
+    {% comment %} <div class="member-meta"> {% endcomment %}
+        <div class="role">
+            {% if post.role %}
+                {% if post.role == "Postdoctoral researcher" %}
+                Postdoc
+                {% elsif post.role == "Research assistant" %}
+                Research assistant
+                {% elsif post.role == "PhD student" %}
+                PhD
+                {% else %}
+                {{ post.role }}
+                {% endif %}
             {% endif %}
-        {% endif %}
-        {% endif %}
-        {% if post.start == post.end %}
-            {% if post.start %}
-                | {{post.start}}
-            {% endif %}
-        {% endif %}
-        </p> 
-        {% if post.thesis %}
-            <p class="mt2-ns mb2-ns">
-                <b>Thesis</b>: {{ post.thesis }}
+            <span style="color: rgb(150,150,150); font-size: 0.6rem;">
+                {% if post.start %}
+                {% if post.end %}
+                    {% if post.start != post.end %}
+                        | {{post.start}}-{{post.end}}
+                    {% endif %}
+                {% endif %}
+                {% endif %}
+            </span>
+        </div>
+        <h2 class="member-name-company">
+            <span class="name">
+                {{ post.name }}
+            </span>
+        </h2>
+        <noindex>
+            <p class="member-bio">
+                {% if post.thesis %}
+                    <b>Thesis</b>: {{ post.thesis }}
+                    <br>
+                {% endif %}
+                {% if post.next_role %}
+                    <b>Next</b>: {{ post.next_role }}
+                    <br>
+                {% endif %}
             </p>
-        {% endif %}
-        {% if post.next_role %}
-            <p class="mt2-ns mb2-ns">
-                <b>Next</b>: {{ post.next_role }}
-            </p>
-        {% endif %}
-        </a>
-    </div>
+        </noindex>
+    {% comment %} </div> {% endcomment %}
     <!-- </article> -->
     </a>
 </div>
