@@ -14,7 +14,7 @@
     <!-- <link href="style_lovers_magazine.css" rel="stylesheet" type="text/css"> -->
 </head>
 
-<body class="avenir">
+<body class="avenir debug">
     <article>
         <div class="db w-100 tc bg-black white cover flex flex-column" id="profile-cover">
             <div class="w-100 v-top" style="margin-bottom: auto;">
@@ -64,7 +64,9 @@
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Papers</h3>
             <div class="flex flex-wrap cf pl0 pb2">
-                {% include list.html collection="papers" sort_by="year" sort_order="reverse"%}
+                {% assign papers = site.papers %}
+                {% assign number_of_items = papers.size %}
+                {% include list.html collection="papers" sort_by="year" sort_order="reverse" items_in_row=number_of_items %}
             </div>
         </div>
 
@@ -72,14 +74,18 @@
             <h3 class="news-wrapper-left-title sans-serif fw1">Tutorials</h3>
             <!-- <div class="bl bw3 bc-gray bg-yellow" style="width:100%; height: 100%; position: absolute;"></div> -->
             <div class="flex flex-wrap cf pl2 pb2">
-                {% include list.html collection="tutorials" sort_by="year" sort_order="reverse"%}
+                {% assign tutorials = site.tutorials %}
+                {% assign number_of_items = tutorials.size %}
+                {% include list.html collection="tutorials" sort_by="year" sort_order="reverse" items_in_row=number_of_items %}
             </div>
         </div>
 
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Blog posts</h3>
             <div class="flex flex-wrap cf w-100 pl2 pb2">
-                {% include list.html collection="blogs" sort_by="year"%}
+                {% assign blogs = site.blogs %}
+                {% assign number_of_items = blogs.size %}
+                {% include list.html collection="blogs" sort_by="year" items_in_row=number_of_items %}
             </div>
         </div>
 
@@ -92,7 +98,9 @@
         </div>
         <div class="mh4">
             <div class="flex flex-wrap cf w-100-l w-100-m w-100-s">
-                {% include list.html collection="news" sort_by="date" sort_order="reverse"%}
+                {% assign news = site.news %}
+                {% assign number_of_items = news.size %}
+                {% include list.html collection="news" sort_by="date" sort_order="reverse" items_in_row=number_of_items %}
             </div>
         </div>
     </section>

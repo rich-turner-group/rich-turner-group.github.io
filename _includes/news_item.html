@@ -1,5 +1,12 @@
-
-<div class="w-100 w-third-l w-50-m pa2">
+{% if include.items_in_row == 2 %}
+<div class="w-100 w-50-l w-50-m ph2 pb2">
+{% elsif include.items_in_row == 3 %}
+<div class="w-100 w-third-l w-third-m ph2 pb2">
+{% elsif include.items_in_row == 4 %}
+<div class="w-100 w-25-l w-50-m ph2 pb2">
+{% else %}
+<div class="w-100 ph2 pb2">
+{% endif %}
     <a href="{{post.link}}" class="fl w-100 pa2 link dim outline ba black-80 bg-light-gray"
         style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <div class="flex flex-column" style="height: 100%;">
