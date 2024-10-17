@@ -46,82 +46,103 @@ a:focus {
 /* About section styling */
 
 .about-and-menu {
-    justify-content: center;
+    justify-content: left;
     display: flex;
     width: 100%;
     flex: 1;
-    padding-top: 2em;
+    padding: 0em;
+    padding-top: 3.5em;
+    margin: 0em;
 }
 
 .menu-in-about {
     /* width: 10em; */
     flex: 1;
-    max-width: 13em;
-
-    margin-top: 0.5em;
+    max-width: 16em;
+    margin-top: 0.0em;
+    padding-top: 0.0em;
     margin-left: 0em;
     margin-right: 0em;
     /* padding-right: max(3em); */
-    margin-top: 0.5em;
+    margin-top: 0.0em;
     /* margin-top: 1em; */
-    padding-top: 0.5em;
     padding-bottom: 0.5em;
 
-    border-width: .25rem;
-    border-top-style: solid;
-    border-bottom-style: none;
-    /* padding-left: 1em; */
 
     text-align: left;
     ;
 }
 
 .menu-title {
-    font-size: 1.75rem;
-    font-weight: 400;
-    margin-top: 0.5em;
-    margin-bottom: 0.75rem;
-    /* padding-bottom: 0em; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1rem, 1.1904761905vw, 1.1111111111rem);
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 0em;
+    padding-bottom: 0.75em;
+
 }
+
+.menu-title h1 {
+
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    font-weight: 300;
+    margin: 0em;
+    padding: 0em;
+}
+
 
 .menu-link {
     display: block;
     margin-right: 2em;
-    margin-left: 0.5em;
+    margin-left: 1.0em;
+    padding-left: 1em;
     /* margin-bottom: 0.5em;
     margin-top: 0.5em; */
-    padding-bottom: 0.75em;
-    padding-top: 0.75em;
-    font-size: 0.75rem;
+    margin-bottom: 1.75em;
+    margin-top: 1.75em;
+    font-size: 0.85rem;
     text-transform: uppercase;
     /* Mid-gray */
     color: #555;
     letter-spacing: .1em;
-    /* Transition effects */
-    transition: color .15s ease-in;
     /* transition: transform 0.25s ease-out; */
+    border-left: 0.1em solid rgb(228, 228, 228);
+    border-right-style: solid;
+    border-color: rgb(228, 228, 228);
+    border-right-width: 0.0em;
+    /* Transition effects */
+    transition: color .15s ease-in-out, border-width .15s ease-in-out, border-radius .3s ease-in-out;
 }
 
 .menu-link:hover,
 .menu-link:focus {
     color: #000;
-    transition: color .15s ease-in;
+    border-right-width: 0.5em;
+    border-left-width: 0.5em;
+    border-color: black;
+    transition: border-width .35s ease-in-out, border-color .35s ease-in-out, color .15s ease-in-out;
 }
 
 .about {
-    max-width: 45em;
+    max-width: 40em;
     padding-left: 2em;
-    padding-right: 0.5em;
+    padding-right: 2.0em;
     margin-left: 1em;
     margin-right: 0.5em;
-    margin-top: 2em;
-    padding-top: 0.6em;
-    /* border-left: 1px solid rgb(228, 228, 228); */
-    /* border-right: 0.05em solid rgb(228, 228, 228); */
+    margin-top: 0em;
+    padding-top: 0.0em;
+    border-left: 2px solid rgb(228, 228, 228);
 
     font-size: 1rem;
     line-height: 1.5;
-    /* padding: 1em 1em 0em 0em; */
 }
 
 .about a::after {
@@ -161,17 +182,36 @@ a:focus {
         max-width: 100%;
         border-width: .125rem;
         border-bottom-style: solid;
+        border-color: rgb(228, 228, 228);
         margin-top: 0em;
         text-align: center;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        /* Match the padding left right to that of about */
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
+
     }
 
     .about {
         max-width: 100%;
+        border-left-style: none;
+        /* Match padding to that in menu-in-about */
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     .menu-link {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
         display: inline;
+        border-left-width: 0em;
     }
 
     .menu-title {
@@ -300,7 +340,7 @@ a p::after {
     height: 1px;
     flex: 1;
     /* margin: 0 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem) */
-    margin: 0 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem) ;
+    margin: 0 0 0 clamp(.8888888889rem, 1.4285714286vw, 1.3333333333rem);
 }
 
 .section-subheader h2 {
