@@ -157,13 +157,18 @@ a:focus {
 }
 
 .apply {
-    max-width: 60em;
+    max-width: 32em;
     padding-left: 0em;
-    padding-right: 0.5em;
-    margin-left: 1em;
+    padding-right: 0.0em;
+    margin-left: 2em;
     margin-right: 0.5em;
     margin-top: 0em;
     padding-top: 0em;
+}
+
+.apply p {
+    margin-top: 0em;
+    margin-bottom: 2em;
 }
 
 .apply a::after {
