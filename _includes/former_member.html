@@ -1,6 +1,9 @@
 {% comment %} <div class="fl w-100 w-third-ns link dim ba bw0 pa2 mv2 mh2 mh0-ns member-box" style="height=100%;"> {% endcomment %}
-<div class="former-member h-100 member-meta">
-<a href="{{ post.website }}" style="width: 100%; height=100%; display: block; color: black;">
+<a href="{{ post.website }}" class="former-member dim">
+{% comment %} <div class="former-member h-100 member-meta"> {% endcomment %}
+    <div class="member-meta" style="height: 100%;">
+        <div class="flex flex-column h-100" style="height: 100%;">
+{% comment %} <a href="{{ post.website }}" style="width: 100%; height=100%; display: block; color: black;"> {% endcomment %}
     <!-- <article> -->
     {% comment %} <div class="member-meta"> {% endcomment %}
         <div class="role">
@@ -15,15 +18,6 @@
                 {{ post.role }}
                 {% endif %}
             {% endif %}
-            <span style="color: rgb(150,150,150); font-size: 0.6rem;">
-                {% if post.start %}
-                {% if post.end %}
-                    {% if post.start != post.end %}
-                        | {{post.start}}-{{post.end}}
-                    {% endif %}
-                {% endif %}
-                {% endif %}
-            </span>
         </div>
         <h2 class="member-name-company">
             <span class="name">
@@ -35,6 +29,7 @@
                 {% if post.thesis %}
                     <b>Thesis</b>: {{ post.thesis }}
                     <br>
+                    <br>
                 {% endif %}
                 {% if post.next_role %}
                     <b>Next</b>: {{ post.next_role }}
@@ -42,7 +37,21 @@
                 {% endif %}
             </p>
         </noindex>
-    {% comment %} </div> {% endcomment %}
-    <!-- </article> -->
-    </a>
-</div>
+        {% comment %} </div> {% endcomment %}
+        <div class="former-member-date v-btm gray">
+            {% if post.start %}
+            {% if post.end %}
+                <div class="datestart">
+                    {{post.start}}
+                </div>
+                    <span class="divider"></span>
+                <div class="dateend">
+                    {{post.end}}
+                </div>
+            {% endif %}
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</a>
+{% comment %} </div> {% endcomment %}

@@ -407,7 +407,8 @@ a p::after {
     display: block
 }
 
-.news-sub-info .divider {
+.news-sub-info .divider,
+.former-member-date .divider {
     background: #000000;
     height: 1px;
     flex: 1;
@@ -523,6 +524,7 @@ a p::after {
 .member-meta .role {
     color: rgb(98, 98, 98);
     display: block;
+    padding-top: clamp(.2444444444rem, 1.1904761905vw, 0.4111111111rem);
     margin: 0 0 clamp(.2222222222rem, .4761904762vw, .4444444444rem);
     font-size: clamp(.6666666667rem, .7738095238vw, .7222222222rem);
     letter-spacing: .12em;
@@ -555,6 +557,13 @@ a p::after {
 
 .former-member {
     border-left: 0.2em solid black;
+    border-top: 0.2em solid rgb(228, 228, 228);
+    border-bottom: 0.2em solid rgb(228, 228, 228);
+    border-right: 0.2em solid rgb(228, 228, 228);
+}
+
+.former-member .member-meta {
+    border-style: none;
 }
 
 .former-members {
@@ -575,4 +584,39 @@ a p::after {
     .former-members {
         grid-template-columns: repeat(4, 1fr)
     }
+}
+
+.former-member-date {
+    /* margin: 0 0 0 0; */
+    margin-bottom: 0.3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 1.35;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: auto;
+    /* Push to bottom */
+
+}
+
+
+.former-member-date .dateend {
+    text-align: right;
+    line-height: 1.25;
+    letter-spacing: .1em;
+}
+
+.former-member-date .datestart {
+    text-align: left;
+    line-height: 1.25;
+    letter-spacing: .1em;
+}
+
+
+.former-member-date span {
+    display: block
 }
