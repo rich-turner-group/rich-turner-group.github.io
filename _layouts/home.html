@@ -15,7 +15,7 @@
 </head>
 
 <body class="avenir">
-    <article class="avenir">
+    <article>
         <div class="db w-100 tc bg-black white cover flex flex-column" id="profile-cover">
             <div class="w-100 v-top" style="margin-bottom: auto;">
                 <header class="white-50">
@@ -35,29 +35,22 @@
         </div>
     </article>
     <!-- <section class="measure-wide center b--light-gray br1 bl br mh3 bg-white"> -->
-    <section>
+    <section class="center pa4" style="max-width: 65em;">
         <div class="about-and-menu" id="about-and-menu">
             <div class="menu-in-about">
-                <h1 class="menu-title" id="group-title-in-menu">
-                    <!--onClick="document.getElementById('group-title-in-menu').innerHTML='Bruno & Kenza Group'"-->
-                    Turner Group
-                </h1>
-                <!-- <h1 class="f3 lh-title fw9 mb3 mt0 pt3 bb bw2">
-                    Richard Turner 
-                </h1> -->
-                <!--a class="menu-link" href="index.html">Home</a-->
-                <a class="menu-link" href="#about-and-menu">About</a>
-                <a class="menu-link" href="#work">Work</a>
-                <a class="menu-link" href="#news">News</a>
-                <a class="menu-link" href="#apply">Apply</a>
-                <a class="menu-link" href="#group-members">Group</a>
+                <div class=menu-title>
+                    <h1>Turner Group</h1>
+                </div>
+                    <a class="menu-link" href="#about-and-menu">About</a>
+                    <a class="menu-link" href="#work">Work</a>
+                    <a class="menu-link" href="#news">News</a>
+                    <a class="menu-link" href="#apply">Apply</a>
+                    <a class="menu-link" href="#group-members">Group</a>
 
             </div>
             <div class="about">
                 {% include list.html collection="about" %}
             </div>
-            <!-- div class="menu-in-about" style="visibility: hidden;">
-            </div-->
 
         </div>
 
@@ -70,23 +63,29 @@
 
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Papers</h3>
-            <div class="flex flex-wrap cf pl2 pb2">
-                {% include list.html collection="papers" sort_by="year" sort_order="reverse"%}
+            <div class="flex flex-wrap cf pl0 pb2">
+                {% assign papers = site.papers %}
+                {% assign number_of_items = papers.size %}
+                {% include list.html collection="papers" sort_by="year" sort_order="reverse" items_in_row=number_of_items %}
             </div>
         </div>
 
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Tutorials</h3>
             <!-- <div class="bl bw3 bc-gray bg-yellow" style="width:100%; height: 100%; position: absolute;"></div> -->
-            <div class="flex flex-wrap cf pl2 pb2">
-                {% include list.html collection="tutorials" sort_by="year" sort_order="reverse"%}
+            <div class="flex flex-wrap cf pl0 pb2">
+                {% assign tutorials = site.tutorials %}
+                {% assign number_of_items = tutorials.size %}
+                {% include list.html collection="tutorials" sort_by="year" sort_order="reverse" items_in_row=number_of_items %}
             </div>
         </div>
 
         <div class="news-wrapper-left">
             <h3 class="news-wrapper-left-title sans-serif fw1">Blog posts</h3>
-            <div class="flex flex-wrap cf w-100 pl2 pb2">
-                {% include list.html collection="blogs" sort_by="year"%}
+            <div class="flex flex-wrap cf w-100 pl0 pb2">
+                {% assign blogs = site.blogs %}
+                {% assign number_of_items = blogs.size %}
+                {% include list.html collection="blogs" sort_by="year" items_in_row=number_of_items %}
             </div>
         </div>
 
@@ -97,9 +96,11 @@
             <h1>Recent news</h1>
             <div class="divider"></div>
         </div>
-        <div class="mh4">
+        <div class="ma0" style="margin-left: 2em;">
             <div class="flex flex-wrap cf w-100-l w-100-m w-100-s">
-                {% include list.html collection="news" sort_by="date" sort_order="reverse"%}
+                {% assign news = site.news %}
+                {% assign number_of_items = news.size %}
+                {% include list.html collection="news" sort_by="date" sort_order="reverse" items_in_row=number_of_items %}
             </div>
         </div>
     </section>
@@ -138,10 +139,11 @@
             <h2>Former</h2>
             <div class="divider"></div>
         </div>
-        <div class="center ph1-ns">
-            <div class="flex flex-wrap cf ph1-ns">
+        <div class="center w-100">
+            <div class="members-block">
+                <div class="former-members">
                 {% include list.html collection="former" sort_by="end" sort_order="reverse"%}
-
+                </div>
             </div>
         </div>
         </div>

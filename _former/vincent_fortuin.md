@@ -1,6 +1,6 @@
 ---
 name: "Vincent Fortuin"
-role: "Postdoctoral fellow"
+role: "Postdoctoral researcher"
 start: "2022"
 end: "2023"
 website: https://fortuin.github.io

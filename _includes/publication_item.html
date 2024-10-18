@@ -1,24 +1,36 @@
-<a href="{{post.link}}" class="link dim fl w-100 w-30-l w-40-m pa2 ma2 outline ba mr0 black-80 bg-light-gray"
-    style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <div class="flex flex-column h-100" style="height: 100%;">
-        <div class="flex w-100 v-top ph2" style="margin-bottom: auto;         flex-direction: column;
-        justify-content: space-between;">
-            <h3 class="fw6 avenir mt3 lh-copy" style="font-size: 1rem; min-height: 6rem; text-wrap: pretty;">
-                <span class="fw6"> {{ post.title }} </span>
-                <br>
-                <span class="fw4 gray">
-                    {{ post.authors }}
-                </span>
-            </h3>
-        </div>
-        <div class="news-sub-info v-btm">
-            <div class="news-type">
-                {{ post.type }}
+{% comment %} {% assign collection = site[include.collection] %}
+{% assign collection_size = collection.size %} {% endcomment %}
+{% if include.items_in_row == 2 %}
+<div class="w-100 w-50-l w-50-m ph2 pb2">
+{% elsif include.items_in_row == 3 %}
+<div class="w-100 w-third-l w-third-m ph2 pb2">
+{% elsif include.items_in_row == 4 %}
+<div class="w-100 w-25-l w-50-m ph2 pb2">
+{% else %}
+<div class="w-100 ph2 pb2">
+{% endif %}
+    <a href="{{post.link}}" class="w-100 h-100 link dim fl pa2 ma0 outline ba mr0 black-80 bg-light-gray"
+        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="flex flex-column h-100" style="height: 100%;">
+            <div class="flex w-100 v-top ph2" style="margin-bottom: auto;         flex-direction: column;
+            justify-content: space-between;">
+                <h3 class="fw6 avenir mt3 lh-copy" style="font-size: 1rem; min-height: 6rem; text-wrap: pretty;">
+                    <span class="fw6"> {{ post.title }} </span>
+                    <br>
+                    <span class="fw4 gray">
+                        {{ post.authors }}
+                    </span>
+                </h3>
             </div>
-            <span class="divider"></span>
-            <div class="date">
-                {{ post.year }}
+            <div class="news-sub-info v-btm">
+                <div class="news-type">
+                    {{ post.type }}
+                </div>
+                <span class="divider"></span>
+                <div class="date">
+                    {{ post.year }}
+                </div>
             </div>
         </div>
-    </div>
-</a>
+    </a>
+</div>
