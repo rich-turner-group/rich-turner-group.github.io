@@ -35,7 +35,11 @@ a:focus {
 #profile-cover {
 
     min-height: 20em;
-    background-image: url(images/webpage-banner-4.jpg);
+    /* background-image: url(images/webpage-banner-4.jpg); */
+    /* background-image: url(images/IMG_8783.JPG); */
+    /* background-image: url(images/IMG_8770.JPG); */
+    /* Multiple images, load first one preferrably, but display the other one until first one loads: */
+    background-image: url(images/rich-banner-composite.jpg), url(images/rich-banner-composite-small.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     /* background-attachment: fixed; */
