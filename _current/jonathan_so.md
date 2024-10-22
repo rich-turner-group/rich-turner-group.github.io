@@ -6,5 +6,4 @@ role: "PhD student"
 start: "2019"
 interests:
     - "probabilistic machine learning"
-    - "computational neuroscience"
 ---
