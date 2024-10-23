@@ -17,10 +17,10 @@ To add a former member:
 
 To add a publication:
 
-1. create a new markdown file in the `_papers`, `_blogs` or `_tutorials` folder following the template of one of files.
+1. create a new markdown file in the `_papers`, `_blogs` or `_tutorials` folder following the template of one of the other files in these folders.
 
 To add a news:
 
-1. create a new markdown file in the `_news` folder following the template of one of files.
+1. create a new markdown file in the `_news` folder following the template of one of the other files in the folder.
 
 To change the content in the About or Apply section you can simply update the markdown files in the `_about` and `_apply` folders.
