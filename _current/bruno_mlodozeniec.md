@@ -5,7 +5,7 @@ picture: images/members/bruno_mlodozeniec.jpg
 role: "PhD student" 
 start: "2023"
 interests:
-    - "probabilistic modelling"
-    - "interpretability"
-    - "causality"
+    - "generalisation"
+    - "diffusion models"
+    - "science of deep learning"
 ---
