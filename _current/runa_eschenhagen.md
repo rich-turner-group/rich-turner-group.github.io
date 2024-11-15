@@ -5,6 +5,5 @@ picture: images/members/runa_eschenhagen.jpg
 role: "PhD student"
 start: "2023"
 interests:
-    - "training algorithms for deep learning"
-    - "approximate Bayesian inference"
+    - "neural network training algorithms and dynamics"
 ---
