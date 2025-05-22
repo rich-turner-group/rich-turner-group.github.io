@@ -1,7 +1,7 @@
 ---
 title: "A foundation model for the Earth System"
-link: https://arxiv.org/abs/2405.13063
-year: "2024"
-type: "Preprint"
+link: https://www.nature.com/articles/s41586-025-09005-y
+year: "2025"
+type: "Article"
 authors: "Bodnar et al."
 ---
