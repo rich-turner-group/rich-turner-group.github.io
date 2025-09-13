@@ -17,8 +17,6 @@
   {% if remainder == 0 %}
     {% comment %} All groups of 3 {% endcomment %}
     {% assign num_threes = size %}
-    {% for i in (1..num_threes) %}{% assign groups_string = groups_string | append: '3,' %}{% endfor %}
-
   {% elsif remainder == 1 %}
     {% comment %} One group of 4, rest are 3s {% endcomment %}
     {% assign num_threes = size | minus: 4 %}
