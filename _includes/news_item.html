@@ -1,12 +1,22 @@
-{% if include.items_in_row == 2 %}
-<div class="w-100 w-50-l w-50-m ph2 pb2">
-{% elsif include.items_in_row == 3 %}
-<div class="w-100 w-third-l w-third-m ph2 pb2">
-{% elsif include.items_in_row == 4 %}
-<div class="w-100 w-25-l w-50-m ph2 pb2">
-{% else %}
-<div class="w-100 ph2 pb2">
-{% endif %}
+{%- assign size = include.num_posts -%}
+{%- assign size_is_odd = size | modulo: 2 -%}
+{%- assign last_three_threshold = size | minus: 3 -%}
+
+{%- if size_is_odd == 1 -%}
+  {% comment %} The slice has an ODD number of posts (1 or 3) {% endcomment %}
+  {%- if size == 1 -%}
+    <div class="w-100 ph2 pb2">
+  {%- else -%}
+    {%- if post_index >= last_three_threshold -%}
+      <div class="w-100 w-third-l w-third-m ph2 pb2">
+    {%- else -%}
+      <div class="w-100 w-50-l w-50-m ph2 pb2">
+    {%- endif -%}
+  {%- endif -%}
+{%- else -%}
+  {% comment %} The slice has an even number of posts (must be 2) {% endcomment %}
+  <div class="w-100 w-50-l w-50-m ph2 pb2">
+{%- endif -%}
     <a href="{{post.link}}" class="fl w-100 h-100 pa2 link dim outline ba black-80 bg-light-gray"
         style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <div class="flex flex-column" style="height: 100%;">
