@@ -66,8 +66,7 @@
             <h3 class="news-wrapper-left-title sans-serif fw1">Papers</h3>
             <div class="flex flex-wrap cf pl0 pb2">
                 {% assign papers = site.papers %}
-                {% assign number_of_items = papers.size %}
-                {% include list.html collection="papers" sort_by="year" sort_order="reverse" items_in_row=number_of_items %}
+                {% include list.html collection="papers" sort_by="year" sort_order="reverse" %}
             </div>
         </div>
 
@@ -100,8 +99,7 @@
         <div class="ma0" style="margin-left: 2em;">
             <div class="flex flex-wrap cf w-100-l w-100-m w-100-s">
                 {% assign news = site.news %}
-                {% assign number_of_items = news.size %}
-                {% include list.html collection="news" sort_by="date" sort_order="reverse" items_in_row=number_of_items %}
+                {% include list.html collection="news" sort_by="date" sort_order="reverse" %}
             </div>
         </div>
     </section>

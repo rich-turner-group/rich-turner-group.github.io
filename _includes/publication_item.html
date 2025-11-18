@@ -1,14 +1,39 @@
-{% comment %} {% assign collection = site[include.collection] %}
-{% assign collection_size = collection.size %} {% endcomment %}
-{% if include.items_in_row == 2 %}
-<div class="w-100 w-50-l w-50-m ph2 pb2">
-{% elsif include.items_in_row == 3 %}
-<div class="w-100 w-third-l w-third-m ph2 pb2">
-{% elsif include.items_in_row == 4 %}
-<div class="w-100 w-25-l w-50-m ph2 pb2">
-{% else %}
-<div class="w-100 ph2 pb2">
-{% endif %}
+{%- assign size = include.num_posts -%}
+{%- assign post_index = include.post_index -%}
+
+
+{%- if size == 1 -%}
+      <div class="w-100 ph2 pb2">
+{%- elsif size == 2 -%}
+      <div class="w-100 w-50-l w-50-m ph2 pb2">
+{%- elsif size == 5 -%}
+  {%- assign last_three_threshold = size | minus: 3 -%}
+  {%- if post_index < 2 -%}
+      <div class="w-100 w-50-l w-50-m ph2 pb2">
+  {%- else -%}
+     <div class="w-100 w-third-l w-third-m ph2 pb2">
+  {%- endif -%}
+{%- else -%}
+  {% comment %} --- GENERAL CASE LOGIC --- {% endcomment %}
+  {% assign remainder = size | modulo: 3 %}
+
+  {% if remainder == 0 %}
+    {% comment %} All groups of 3 {% endcomment %}
+    {% assign num_threes = size %}
+  {% elsif remainder == 1 %}
+    {% comment %} One group of 4, rest are 3s {% endcomment %}
+    {% assign num_threes = size | minus: 4 %}
+  {% elsif remainder == 2 %}
+    {% comment %} Two groups of 4, rest are 3s {% endcomment %}
+    {% assign num_threes = size | minus: 8 %}
+  {% endif %}
+  {% if post_index < num_threes %}
+       <div class="w-100 w-third-l w-third-m ph2 pb2">
+  {% else %}
+      <div class="w-100 w-25-l w-50-m ph2 pb2">
+
+  {% endif %}
+{%- endif -%}
     <a href="{{post.link}}" class="w-100 h-100 link dim fl pa2 ma0 outline ba mr0 black-80 bg-light-gray"
         style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <div class="flex flex-column h-100" style="height: 100%;">

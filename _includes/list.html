@@ -11,19 +11,19 @@
 {%- for post in entries -%}
 {%- unless post.hidden -%}
     {% if include.collection == "papers" %}
-        {% include publication_item.html %}
+        {% include publication_item.html post_index=forloop.index0 num_posts=entries.size %}
     {% endif %}
     
     {% if include.collection == "tutorials" %}
-        {% include publication_item.html %}
+        {% include publication_item.html post_index=forloop.index0 num_posts=entries.size %}
     {% endif %}
     
     {% if include.collection == "blogs" %}
-        {% include publication_item.html %}
+        {% include publication_item.html post_index=forloop.index0 num_posts=entries.size %}
     {% endif %}
     
     {% if include.collection == "news" %}
-        {%- include news_item.html %}
+        {%- include news_item.html post_index=forloop.index0 num_posts=entries.size %}
     {% endif %}
 
     {% if include.collection == "former" %}
