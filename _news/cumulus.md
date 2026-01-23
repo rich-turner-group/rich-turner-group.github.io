@@ -1,9 +1,9 @@
 ---
 title: "Project Cumulus: AI forecasting for Africa"
-link: https://www.washingtonpost.com/weather/2025/05/21/microsoft-ai-weather-model-study/
+link: https://www.turing.ac.uk/news/ai-forecasting-initiative-set-strengthen-climate-resilience-and-food-security-west-africa
 date: "Jan 2026"
 type: "Blog"
-venue: "Turing News"
+venue: "The Alan Turing Institute News"
 ---
 
 
