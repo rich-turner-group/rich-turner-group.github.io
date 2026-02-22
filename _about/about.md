@@ -2,12 +2,12 @@
 title: About
 ---
 
-I'm Rich Turner, a Professor of Machine Learning in the [Machine Learning Group](https://mlg.eng.cam.ac.uk) at the University of Cambridge and a Research Lead, AI for Weather
-Prediction, at the [Alan Turing Institute](https://www.turing.ac.uk).
+I'm Rich Turner, Professor of Machine Learning in the [Machine Learning Group](https://mlg.eng.cam.ac.uk) at the University of Cambridge.
 
-I am the Cambridge Lead for the EPSRC [Probabilistic AI Hub](https://www.probai.uk). 
+I am the Cambridge Lead for the EPSRC [Probabilistic AI Hub](https://www.probai.uk), Lead of the [Cumulus AI Weather Forecasting Project](https://www.turing.ac.uk/news/ai-forecasting-initiative-set-strengthen-climate-resilience-and-food-security-west-africa#:~:text=Project%20Cumulus%2C%20funded%20by%20the,co%2Ddesign%20more%20accurate%20and), and Cambridge lead of the [DVPS Foundation Models For Future AI Initiative](https://dvps.translated.com). 
 
-My previous roles include Visiting Researcher at Microsoft Research in the [AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/) and AI teams, Co-Director of the UKRI Centre for Doctoral Training in the Application of Artificial Intelligence to the study of Environmental Risks ([AI4ER CDT](https://ai4er-cdt.esc.cam.ac.uk)), and Course Director of the [Machine Learning and Machine Intelligence MPhil](https://www.mlmi.eng.cam.ac.uk) programme. I have received over £35 million of funding as a Principal or Co-Investigator. I've been awarded the Cambridge Students' Union Teaching Award for Lecturing. My research has featured in the Times, Guardian, New York Times, Washington Post, and on the BBC.
+My previous roles include Research Lead, AI for Weather
+Prediction, at the [Alan Turing Institute](https://www.turing.ac.uk), Visiting Researcher at Microsoft Research in the [AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/) and AI teams, Co-Director of the UKRI Centre for Doctoral Training in the Application of Artificial Intelligence to the study of Environmental Risks ([AI4ER CDT](https://ai4er-cdt.esc.cam.ac.uk)), and Course Director of the [Machine Learning and Machine Intelligence MPhil](https://www.mlmi.eng.cam.ac.uk) programme. I have received over £35 million of funding as a Principal or Co-Investigator. I've been awarded the Cambridge Students' Union Teaching Award for Lecturing. My research has featured in the Times, Guardian, New York Times, Washington Post, and on the BBC.
 
 My current research interests include:
 
