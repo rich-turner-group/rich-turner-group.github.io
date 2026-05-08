@@ -1,6 +1,6 @@
 # Rich Turner Group website
 
-[rich-turner-group.github.io](rich-turner-group.github.io)
+[rich-turner-group.github.io](https://rich-turner-group.github.io/)
 
 ## How to update the website
 
